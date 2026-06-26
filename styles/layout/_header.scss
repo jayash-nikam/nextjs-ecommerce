@@ -1,0 +1,125 @@
+@import "../abstracts/variables";
+
+.site-header {
+  background: var(--header-bg);
+  color: var(--header-fg);
+  border-color: var(--header-border);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.site-header .header-muted {
+  color: var(--header-muted);
+}
+
+.site-header .header-link {
+  color: var(--header-muted);
+}
+
+.site-header .header-link:hover {
+  color: var(--header-fg);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.site-header .header-link-active {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.site-header .header-logo-text {
+  color: #ffffff;
+  background: none;
+  -webkit-text-fill-color: #ffffff;
+}
+
+.site-header .header-icon {
+  color: #ffffff;
+}
+
+.site-header .header-search {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
+.site-header .header-search::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.site-header .header-search:focus-within {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.08);
+}
+
+.site-header .header-dropdown {
+  background: #111111;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 24px 48px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.site-header .header-mega-item {
+  color: #e5e5e5;
+  transition: background 0.2s ease;
+}
+
+.site-header .header-mega-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.site-header .header-mega-item-title {
+  color: #ffffff;
+}
+
+.site-header .header-mega-desc {
+  color: #a3a3a3;
+}
+
+.site-header .header-dropdown-divider {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.site-header .header-dropdown-btn-primary {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  transition: background 0.2s ease;
+}
+
+.site-header .header-dropdown-btn-primary:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.site-header .header-dropdown-btn-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #d4d4d4;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.site-header .header-dropdown-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+.site-header .header-menu-link {
+  color: #a3a3a3;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.site-header .header-menu-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+.site-header .header-menu-user {
+  color: #737373;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.site-header .header-menu-danger {
+  color: #f87171;
+}
+
+.site-header .header-menu-danger:hover {
+  background: rgba(248, 113, 113, 0.1);
+}

@@ -1,0 +1,147 @@
+@import "../abstracts/mixins";
+
+.site-main {
+  flex: 1;
+  width: 100%;
+  max-width: var(--site-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem var(--site-gutter);
+
+  @include sm {
+    padding-left: var(--site-gutter-sm);
+    padding-right: var(--site-gutter-sm);
+  }
+}
+
+.page-full-bleed {
+  margin-top: -2rem;
+  margin-left: calc(-1 * var(--site-gutter));
+  margin-right: calc(-1 * var(--site-gutter));
+
+  @include sm {
+    margin-left: calc(-1 * var(--site-gutter-sm));
+    margin-right: calc(-1 * var(--site-gutter-sm));
+  }
+}
+
+.page-inset {
+  padding-left: var(--site-gutter);
+  padding-right: var(--site-gutter);
+
+  @include sm {
+    padding-left: var(--site-gutter-sm);
+    padding-right: var(--site-gutter-sm);
+  }
+}
+
+.page-pdp {
+  width: 100%;
+
+  @include lg {
+    padding-left: var(--site-gutter-lg);
+    padding-right: var(--site-gutter-lg);
+  }
+
+  @include xl {
+    padding-left: var(--site-gutter-xl);
+    padding-right: var(--site-gutter-xl);
+  }
+}
+
+.page-narrow {
+  width: 100%;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-wide {
+  width: 100%;
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pdp-grid {
+  display: grid;
+  gap: 2.5rem;
+
+  @include lg {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3.5rem;
+  }
+}
+
+.pdp-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+.responsive-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.filters-panel {
+  height: 100%;
+  background: var(--card);
+
+  @include lg {
+    height: auto;
+    background: transparent;
+  }
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  @include sm {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.cart-item__total {
+  align-self: flex-start;
+
+  @include sm {
+    align-self: center;
+    margin-left: auto;
+  }
+}
+
+.trust-bar {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+
+  @include lg {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.static-page {
+  width: 100%;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.static-page__title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.75rem;
+
+  @include sm {
+    font-size: 2.25rem;
+  }
+}

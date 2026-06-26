@@ -1,0 +1,38 @@
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --muted: #64748b;
+  --muted-foreground: #94a3b8;
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --border: #e2e8f0;
+  --border-subtle: #f1f5f9;
+  --primary: #6366f1;
+  --primary-hover: #4f46e5;
+  --primary-foreground: #ffffff;
+  --accent: #8b5cf6;
+  --accent-soft: #ede9fe;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --ring: rgba(99, 102, 241, 0.35);
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 4px 16px rgba(15, 23, 42, 0.06);
+  --shadow-lg: 0 12px 40px rgba(15, 23, 42, 0.1);
+  --shadow-glow: 0 0 40px rgba(99, 102, 241, 0.15);
+  --radius: 0.875rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.5rem;
+  --header-bg: #000000;
+  --header-fg: #ffffff;
+  --header-muted: #a3a3a3;
+  --header-border: rgba(255, 255, 255, 0.1);
+  --footer-bg: #000000;
+  --footer-fg: #ffffff;
+  --footer-muted: #a3a3a3;
+  --site-max-width: 1600px;
+  --site-gutter: 1rem;
+  --site-gutter-sm: 1.5rem;
+  --site-gutter-lg: 2.5rem;
+  --site-gutter-xl: 4rem;
+}

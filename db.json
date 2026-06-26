@@ -1,0 +1,3136 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "MacBook Pro 14\" M4 Pro",
+      "brand": "Apple",
+      "price": 219900,
+      "category": "laptop",
+      "rating": 4.9,
+      "stock": 71,
+      "tags": [
+        "laptop",
+        "apple",
+        "pro",
+        "m4"
+      ],
+      "description": "MacBook Pro 14\" M4 Pro delivers exceptional performance for work and play. Apple's latest engineering ensures fast multitasking, vivid displays, and all-day battery life for modern professionals.",
+      "specs": {
+        "processor": "Latest Gen",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "display": "High Resolution",
+        "warranty": "1 Year",
+        "model_number": "APP-001",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=1200",
+        "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200",
+        "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?q=80&w=1200",
+        "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "MacBook Air 15\" M3",
+      "brand": "Apple",
+      "price": 134900,
+      "category": "laptop",
+      "rating": 4.8,
+      "stock": 88,
+      "tags": [
+        "laptop",
+        "apple",
+        "ultrabook"
+      ],
+      "description": "MacBook Air 15\" M3 delivers exceptional performance for work and play. Apple's latest engineering ensures fast multitasking, vivid displays, and all-day battery life for modern professionals.",
+      "specs": {
+        "processor": "Latest Gen",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "display": "High Resolution",
+        "warranty": "1 Year",
+        "model_number": "APP-002",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=1200",
+        "https://images.unsplash.com/photo-1602080858427-d2a947ce6cbb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1629131726962-d12612cb4058?q=80&w=1200",
+        "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "XPS 15 9530",
+      "brand": "Dell",
+      "price": 164999,
+      "category": "laptop",
+      "rating": 4.7,
+      "stock": 28,
+      "tags": [
+        "laptop",
+        "dell",
+        "creator"
+      ],
+      "description": "XPS 15 9530 delivers exceptional performance for work and play. Dell's latest engineering ensures fast multitasking, vivid displays, and all-day battery life for modern professionals.",
+      "specs": {
+        "processor": "Latest Gen",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "display": "High Resolution",
+        "warranty": "1 Year",
+        "model_number": "DEL-003",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200",
+        "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?q=80&w=1200",
+        "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?q=80&w=1200",
+        "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "XPS 13 Plus",
+      "brand": "Dell",
+      "price": 139990,
+      "category": "laptop",
+      "rating": 4.6,
+      "stock": 78,
+      "tags": [
+        "laptop",
+        "dell",
+        "portable"
+      ],
+      "description": "XPS 13 Plus delivers exceptional performance for work and play. Dell's latest engineering ensures fast multitasking, vivid displays, and all-day battery life for modern professionals.",
+      "specs": {
+        "processor": "Latest Gen",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "display": "High Resolution",
+        "warranty": "1 Year",
+        "model_number": "DEL-004",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1602080858427-d2a947ce6cbb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1629131726962-d12612cb4058?q=80&w=1200",
+        "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1200",
+        "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "ThinkPad X1 Carbon Gen 12",
+      "brand": "Lenovo",
+      "price": 178999,
+      "category": "laptop",
+      "rating": 4.8,
+      "stock": 68,
+      "tags": [
+        "laptop",
+        "lenovo",
+        "business"
+      ],
+      "description": "ThinkPad X1 Carbon Gen 12 delivers exceptional performance for work and play. Lenovo's latest engineering ensures fast multitasking, vivid displays, and all-day battery life for modern professionals.",
+      "specs": {
+        "processor": "Latest Gen",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "display": "High Resolution",
+        "warranty": "1 Year",
+        "model_number": "LEN-005",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?q=80&w=1200",
+        "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?q=80&w=1200",
+        "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Legion Pro 7i",
+      "brand": "Lenovo",
+      "price": 199990,
+      "category": "laptop",
+      "rating": 4.7,
+      "stock": 86,
+      "tags": [
+        "laptop",
+        "gaming",
+        "lenovo"
+      ],
+      "description": "Legion Pro 7i delivers exceptional performance for work and play. Lenovo's latest engineering ensures fast multitasking, vivid displays, and all-day battery life for modern professionals.",
+      "specs": {
+        "processor": "Latest Gen",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "display": "High Resolution",
+        "warranty": "1 Year",
+        "model_number": "LEN-006",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1629131726962-d12612cb4058?q=80&w=1200",
+        "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1200",
+        "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=1200",
+        "https://images.unsplash.com/photo-1602080858427-d2a947ce6cbb?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Spectre x360 14",
+      "brand": "HP",
+      "price": 149999,
+      "category": "laptop",
+      "rating": 4.6,
+      "stock": 65,
+      "tags": [
+        "laptop",
+        "hp",
+        "2-in-1"
+      ],
+      "description": "Spectre x360 14 delivers exceptional performance for work and play. HP's latest engineering ensures fast multitasking, vivid displays, and all-day battery life for modern professionals.",
+      "specs": {
+        "processor": "Latest Gen",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "display": "High Resolution",
+        "warranty": "1 Year",
+        "model_number": "HP-007",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?q=80&w=1200",
+        "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=1200",
+        "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200",
+        "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Omen 16",
+      "brand": "HP",
+      "price": 124999,
+      "category": "laptop",
+      "rating": 4.5,
+      "stock": 28,
+      "tags": [
+        "laptop",
+        "gaming",
+        "hp"
+      ],
+      "description": "Omen 16 delivers exceptional performance for work and play. HP's latest engineering ensures fast multitasking, vivid displays, and all-day battery life for modern professionals.",
+      "specs": {
+        "processor": "Latest Gen",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "display": "High Resolution",
+        "warranty": "1 Year",
+        "model_number": "HP-008",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1200",
+        "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=1200",
+        "https://images.unsplash.com/photo-1602080858427-d2a947ce6cbb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1629131726962-d12612cb4058?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "ROG Zephyrus G16",
+      "brand": "ASUS",
+      "price": 189999,
+      "category": "laptop",
+      "rating": 4.8,
+      "stock": 66,
+      "tags": [
+        "laptop",
+        "gaming",
+        "asus"
+      ],
+      "description": "ROG Zephyrus G16 delivers exceptional performance for work and play. ASUS's latest engineering ensures fast multitasking, vivid displays, and all-day battery life for modern professionals.",
+      "specs": {
+        "processor": "Latest Gen",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "display": "High Resolution",
+        "warranty": "1 Year",
+        "model_number": "ASU-009",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=1200",
+        "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200",
+        "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?q=80&w=1200",
+        "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Zenbook 14 OLED",
+      "brand": "ASUS",
+      "price": 89990,
+      "category": "laptop",
+      "rating": 4.6,
+      "stock": 22,
+      "tags": [
+        "laptop",
+        "asus",
+        "oled"
+      ],
+      "description": "Zenbook 14 OLED delivers exceptional performance for work and play. ASUS's latest engineering ensures fast multitasking, vivid displays, and all-day battery life for modern professionals.",
+      "specs": {
+        "processor": "Latest Gen",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "display": "High Resolution",
+        "warranty": "1 Year",
+        "model_number": "ASU-010",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=1200",
+        "https://images.unsplash.com/photo-1602080858427-d2a947ce6cbb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1629131726962-d12612cb4058?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Stealth 16 Studio",
+      "brand": "MSI",
+      "price": 209990,
+      "category": "laptop",
+      "rating": 4.7,
+      "stock": 85,
+      "tags": [
+        "laptop",
+        "msi",
+        "creator"
+      ],
+      "description": "Stealth 16 Studio delivers exceptional performance for work and play. MSI's latest engineering ensures fast multitasking, vivid displays, and all-day battery life for modern professionals.",
+      "specs": {
+        "processor": "Latest Gen",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "display": "High Resolution",
+        "warranty": "1 Year",
+        "model_number": "MSI-011",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200",
+        "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?q=80&w=1200",
+        "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?q=80&w=1200",
+        "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Swift Go 14",
+      "brand": "Acer",
+      "price": 64990,
+      "category": "laptop",
+      "rating": 4.4,
+      "stock": 8,
+      "tags": [
+        "laptop",
+        "acer",
+        "budget"
+      ],
+      "description": "Swift Go 14 delivers exceptional performance for work and play. Acer's latest engineering ensures fast multitasking, vivid displays, and all-day battery life for modern professionals.",
+      "specs": {
+        "processor": "Latest Gen",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "display": "High Resolution",
+        "warranty": "1 Year",
+        "model_number": "ACE-012",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1602080858427-d2a947ce6cbb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1629131726962-d12612cb4058?q=80&w=1200",
+        "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1200",
+        "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Surface Laptop 6",
+      "brand": "Microsoft",
+      "price": 129999,
+      "category": "laptop",
+      "rating": 4.7,
+      "stock": 15,
+      "tags": [
+        "laptop",
+        "microsoft",
+        "surface"
+      ],
+      "description": "Surface Laptop 6 delivers exceptional performance for work and play. Microsoft's latest engineering ensures fast multitasking, vivid displays, and all-day battery life for modern professionals.",
+      "specs": {
+        "processor": "Latest Gen",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "display": "High Resolution",
+        "warranty": "1 Year",
+        "model_number": "MIC-013",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?q=80&w=1200",
+        "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?q=80&w=1200",
+        "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=1200",
+        "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Blade 16",
+      "brand": "Razer",
+      "price": 279999,
+      "category": "laptop",
+      "rating": 4.8,
+      "stock": 62,
+      "tags": [
+        "laptop",
+        "gaming",
+        "razer"
+      ],
+      "description": "Blade 16 delivers exceptional performance for work and play. Razer's latest engineering ensures fast multitasking, vivid displays, and all-day battery life for modern professionals.",
+      "specs": {
+        "processor": "Latest Gen",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "display": "High Resolution",
+        "warranty": "1 Year",
+        "model_number": "RAZ-014",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1629131726962-d12612cb4058?q=80&w=1200",
+        "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1200",
+        "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=1200",
+        "https://images.unsplash.com/photo-1602080858427-d2a947ce6cbb?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Galaxy Book4 Pro",
+      "brand": "Samsung",
+      "price": 119999,
+      "category": "laptop",
+      "rating": 4.5,
+      "stock": 52,
+      "tags": [
+        "laptop",
+        "samsung",
+        "amoled"
+      ],
+      "description": "Galaxy Book4 Pro delivers exceptional performance for work and play. Samsung's latest engineering ensures fast multitasking, vivid displays, and all-day battery life for modern professionals.",
+      "specs": {
+        "processor": "Latest Gen",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "display": "High Resolution",
+        "warranty": "1 Year",
+        "model_number": "SAM-015",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?q=80&w=1200",
+        "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=1200",
+        "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Laptop 16",
+      "brand": "Framework",
+      "price": 169999,
+      "category": "laptop",
+      "rating": 4.7,
+      "stock": 8,
+      "tags": [
+        "laptop",
+        "modular",
+        "repairable"
+      ],
+      "description": "Laptop 16 delivers exceptional performance for work and play. Framework's latest engineering ensures fast multitasking, vivid displays, and all-day battery life for modern professionals.",
+      "specs": {
+        "processor": "Latest Gen",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "display": "High Resolution",
+        "warranty": "1 Year",
+        "model_number": "FRA-016",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1200",
+        "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=1200",
+        "https://images.unsplash.com/photo-1602080858427-d2a947ce6cbb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1629131726962-d12612cb4058?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Gram 17",
+      "brand": "LG",
+      "price": 134990,
+      "category": "laptop",
+      "rating": 4.6,
+      "stock": 34,
+      "tags": [
+        "laptop",
+        "lg",
+        "lightweight"
+      ],
+      "description": "Gram 17 delivers exceptional performance for work and play. LG's latest engineering ensures fast multitasking, vivid displays, and all-day battery life for modern professionals.",
+      "specs": {
+        "processor": "Latest Gen",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "display": "High Resolution",
+        "warranty": "1 Year",
+        "model_number": "LG-017",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=1200",
+        "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200",
+        "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?q=80&w=1200",
+        "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 18,
+      "title": "MateBook X Pro",
+      "brand": "Huawei",
+      "price": 114999,
+      "category": "laptop",
+      "rating": 4.5,
+      "stock": 17,
+      "tags": [
+        "laptop",
+        "huawei",
+        "premium"
+      ],
+      "description": "MateBook X Pro delivers exceptional performance for work and play. Huawei's latest engineering ensures fast multitasking, vivid displays, and all-day battery life for modern professionals.",
+      "specs": {
+        "processor": "Latest Gen",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "display": "High Resolution",
+        "warranty": "1 Year",
+        "model_number": "HUA-018",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=1200",
+        "https://images.unsplash.com/photo-1602080858427-d2a947ce6cbb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1629131726962-d12612cb4058?q=80&w=1200",
+        "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Aero 16 OLED",
+      "brand": "Gigabyte",
+      "price": 194990,
+      "category": "laptop",
+      "rating": 4.6,
+      "stock": 99,
+      "tags": [
+        "laptop",
+        "creator",
+        "oled"
+      ],
+      "description": "Aero 16 OLED delivers exceptional performance for work and play. Gigabyte's latest engineering ensures fast multitasking, vivid displays, and all-day battery life for modern professionals.",
+      "specs": {
+        "processor": "Latest Gen",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "display": "High Resolution",
+        "warranty": "1 Year",
+        "model_number": "GIG-019",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200",
+        "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?q=80&w=1200",
+        "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?q=80&w=1200",
+        "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 20,
+      "title": "MacBook Pro 16\" M4 Max",
+      "brand": "Apple",
+      "price": 349900,
+      "category": "laptop",
+      "rating": 4.9,
+      "stock": 7,
+      "tags": [
+        "laptop",
+        "apple",
+        "flagship"
+      ],
+      "description": "MacBook Pro 16\" M4 Max delivers exceptional performance for work and play. Apple's latest engineering ensures fast multitasking, vivid displays, and all-day battery life for modern professionals.",
+      "specs": {
+        "processor": "Latest Gen",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "display": "High Resolution",
+        "warranty": "1 Year",
+        "model_number": "APP-020",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1602080858427-d2a947ce6cbb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1629131726962-d12612cb4058?q=80&w=1200",
+        "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 21,
+      "title": "Studio Display 27\"",
+      "brand": "Apple",
+      "price": 159900,
+      "category": "monitor",
+      "rating": 4.8,
+      "stock": 72,
+      "tags": [
+        "monitor",
+        "apple",
+        "5k"
+      ],
+      "description": "Studio Display 27\" offers stunning visuals with accurate colors and smooth refresh rates. Ideal for gaming, creative work, and productivity setups from Apple.",
+      "specs": {
+        "panel": "IPS/OLED",
+        "resolution": "4K/QHD",
+        "refresh_rate": "120Hz+",
+        "connectivity": "USB-C, HDMI",
+        "warranty": "3 Years",
+        "model_number": "APP-021",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?q=80&w=1200",
+        "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?q=80&w=1200",
+        "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=1200",
+        "https://images.unsplash.com/photo-1618767689160-da3fb810aad7?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 22,
+      "title": "UltraFine 32UN880",
+      "brand": "LG",
+      "price": 54990,
+      "category": "monitor",
+      "rating": 4.6,
+      "stock": 61,
+      "tags": [
+        "monitor",
+        "lg",
+        "ergonomic"
+      ],
+      "description": "UltraFine 32UN880 offers stunning visuals with accurate colors and smooth refresh rates. Ideal for gaming, creative work, and productivity setups from LG.",
+      "specs": {
+        "panel": "IPS/OLED",
+        "resolution": "4K/QHD",
+        "refresh_rate": "120Hz+",
+        "connectivity": "USB-C, HDMI",
+        "warranty": "3 Years",
+        "model_number": "LG-022",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1633511091886-3d5b2a18c8f4?q=80&w=1200",
+        "https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?q=80&w=1200",
+        "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=1200",
+        "https://images.unsplash.com/photo-1556155092-8707de7f9c92?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Odyssey G9 49\"",
+      "brand": "Samsung",
+      "price": 129999,
+      "category": "monitor",
+      "rating": 4.7,
+      "stock": 11,
+      "tags": [
+        "monitor",
+        "gaming",
+        "ultrawide"
+      ],
+      "description": "Odyssey G9 49\" offers stunning visuals with accurate colors and smooth refresh rates. Ideal for gaming, creative work, and productivity setups from Samsung.",
+      "specs": {
+        "panel": "IPS/OLED",
+        "resolution": "4K/QHD",
+        "refresh_rate": "120Hz+",
+        "connectivity": "USB-C, HDMI",
+        "warranty": "3 Years",
+        "model_number": "SAM-023",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?q=80&w=1200",
+        "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=1200",
+        "https://images.unsplash.com/photo-1618767689160-da3fb810aad7?q=80&w=1200",
+        "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 24,
+      "title": "ViewFinity S8 32\"",
+      "brand": "Samsung",
+      "price": 42990,
+      "category": "monitor",
+      "rating": 4.5,
+      "stock": 61,
+      "tags": [
+        "monitor",
+        "4k",
+        "samsung"
+      ],
+      "description": "ViewFinity S8 32\" offers stunning visuals with accurate colors and smooth refresh rates. Ideal for gaming, creative work, and productivity setups from Samsung.",
+      "specs": {
+        "panel": "IPS/OLED",
+        "resolution": "4K/QHD",
+        "refresh_rate": "120Hz+",
+        "connectivity": "USB-C, HDMI",
+        "warranty": "3 Years",
+        "model_number": "SAM-024",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?q=80&w=1200",
+        "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=1200",
+        "https://images.unsplash.com/photo-1556155092-8707de7f9c92?q=80&w=1200",
+        "https://images.unsplash.com/photo-1633511091886-3d5b2a18c8f4?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 25,
+      "title": "UltraSharp U2723QE",
+      "brand": "Dell",
+      "price": 58990,
+      "category": "monitor",
+      "rating": 4.7,
+      "stock": 42,
+      "tags": [
+        "monitor",
+        "dell",
+        "4k"
+      ],
+      "description": "UltraSharp U2723QE offers stunning visuals with accurate colors and smooth refresh rates. Ideal for gaming, creative work, and productivity setups from Dell.",
+      "specs": {
+        "panel": "IPS/OLED",
+        "resolution": "4K/QHD",
+        "refresh_rate": "120Hz+",
+        "connectivity": "USB-C, HDMI",
+        "warranty": "3 Years",
+        "model_number": "DEL-025",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=1200",
+        "https://images.unsplash.com/photo-1618767689160-da3fb810aad7?q=80&w=1200",
+        "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 26,
+      "title": "Alienware AW3423DW",
+      "brand": "Dell",
+      "price": 99990,
+      "category": "monitor",
+      "rating": 4.9,
+      "stock": 8,
+      "tags": [
+        "monitor",
+        "oled",
+        "gaming"
+      ],
+      "description": "Alienware AW3423DW offers stunning visuals with accurate colors and smooth refresh rates. Ideal for gaming, creative work, and productivity setups from Dell.",
+      "specs": {
+        "panel": "IPS/OLED",
+        "resolution": "4K/QHD",
+        "refresh_rate": "120Hz+",
+        "connectivity": "USB-C, HDMI",
+        "warranty": "3 Years",
+        "model_number": "DEL-026",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=1200",
+        "https://images.unsplash.com/photo-1556155092-8707de7f9c92?q=80&w=1200",
+        "https://images.unsplash.com/photo-1633511091886-3d5b2a18c8f4?q=80&w=1200",
+        "https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 27,
+      "title": "ROG Swift PG27UCDM",
+      "brand": "ASUS",
+      "price": 119999,
+      "category": "monitor",
+      "rating": 4.8,
+      "stock": 58,
+      "tags": [
+        "monitor",
+        "oled",
+        "4k"
+      ],
+      "description": "ROG Swift PG27UCDM offers stunning visuals with accurate colors and smooth refresh rates. Ideal for gaming, creative work, and productivity setups from ASUS.",
+      "specs": {
+        "panel": "IPS/OLED",
+        "resolution": "4K/QHD",
+        "refresh_rate": "120Hz+",
+        "connectivity": "USB-C, HDMI",
+        "warranty": "3 Years",
+        "model_number": "ASU-027",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1618767689160-da3fb810aad7?q=80&w=1200",
+        "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?q=80&w=1200",
+        "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?q=80&w=1200",
+        "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 28,
+      "title": "ProArt PA32UCX",
+      "brand": "ASUS",
+      "price": 289990,
+      "category": "monitor",
+      "rating": 4.8,
+      "stock": 78,
+      "tags": [
+        "monitor",
+        "creator",
+        "mini-led"
+      ],
+      "description": "ProArt PA32UCX offers stunning visuals with accurate colors and smooth refresh rates. Ideal for gaming, creative work, and productivity setups from ASUS.",
+      "specs": {
+        "panel": "IPS/OLED",
+        "resolution": "4K/QHD",
+        "refresh_rate": "120Hz+",
+        "connectivity": "USB-C, HDMI",
+        "warranty": "3 Years",
+        "model_number": "ASU-028",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1556155092-8707de7f9c92?q=80&w=1200",
+        "https://images.unsplash.com/photo-1633511091886-3d5b2a18c8f4?q=80&w=1200",
+        "https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?q=80&w=1200",
+        "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 29,
+      "title": "MOBIUZ EX321UX",
+      "brand": "BenQ",
+      "price": 74990,
+      "category": "monitor",
+      "rating": 4.6,
+      "stock": 96,
+      "tags": [
+        "monitor",
+        "gaming",
+        "4k"
+      ],
+      "description": "MOBIUZ EX321UX offers stunning visuals with accurate colors and smooth refresh rates. Ideal for gaming, creative work, and productivity setups from BenQ.",
+      "specs": {
+        "panel": "IPS/OLED",
+        "resolution": "4K/QHD",
+        "refresh_rate": "120Hz+",
+        "connectivity": "USB-C, HDMI",
+        "warranty": "3 Years",
+        "model_number": "BEN-029",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?q=80&w=1200",
+        "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?q=80&w=1200",
+        "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=1200",
+        "https://images.unsplash.com/photo-1618767689160-da3fb810aad7?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 30,
+      "title": "UltraGear 27GR95QE",
+      "brand": "LG",
+      "price": 64990,
+      "category": "monitor",
+      "rating": 4.7,
+      "stock": 71,
+      "tags": [
+        "monitor",
+        "oled",
+        "gaming"
+      ],
+      "description": "UltraGear 27GR95QE offers stunning visuals with accurate colors and smooth refresh rates. Ideal for gaming, creative work, and productivity setups from LG.",
+      "specs": {
+        "panel": "IPS/OLED",
+        "resolution": "4K/QHD",
+        "refresh_rate": "120Hz+",
+        "connectivity": "USB-C, HDMI",
+        "warranty": "3 Years",
+        "model_number": "LG-030",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1633511091886-3d5b2a18c8f4?q=80&w=1200",
+        "https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?q=80&w=1200",
+        "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 31,
+      "title": "MAG 321UPX",
+      "brand": "MSI",
+      "price": 89990,
+      "category": "monitor",
+      "rating": 4.6,
+      "stock": 68,
+      "tags": [
+        "monitor",
+        "4k",
+        "gaming"
+      ],
+      "description": "MAG 321UPX offers stunning visuals with accurate colors and smooth refresh rates. Ideal for gaming, creative work, and productivity setups from MSI.",
+      "specs": {
+        "panel": "IPS/OLED",
+        "resolution": "4K/QHD",
+        "refresh_rate": "120Hz+",
+        "connectivity": "USB-C, HDMI",
+        "warranty": "3 Years",
+        "model_number": "MSI-031",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?q=80&w=1200",
+        "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=1200",
+        "https://images.unsplash.com/photo-1618767689160-da3fb810aad7?q=80&w=1200",
+        "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 32,
+      "title": "Predator X34 V",
+      "brand": "Acer",
+      "price": 79990,
+      "category": "monitor",
+      "rating": 4.5,
+      "stock": 8,
+      "tags": [
+        "monitor",
+        "ultrawide",
+        "gaming"
+      ],
+      "description": "Predator X34 V offers stunning visuals with accurate colors and smooth refresh rates. Ideal for gaming, creative work, and productivity setups from Acer.",
+      "specs": {
+        "panel": "IPS/OLED",
+        "resolution": "4K/QHD",
+        "refresh_rate": "120Hz+",
+        "connectivity": "USB-C, HDMI",
+        "warranty": "3 Years",
+        "model_number": "ACE-032",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?q=80&w=1200",
+        "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=1200",
+        "https://images.unsplash.com/photo-1556155092-8707de7f9c92?q=80&w=1200",
+        "https://images.unsplash.com/photo-1633511091886-3d5b2a18c8f4?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 33,
+      "title": "E45c G5 Curved",
+      "brand": "HP",
+      "price": 54999,
+      "category": "monitor",
+      "rating": 4.4,
+      "stock": 79,
+      "tags": [
+        "monitor",
+        "ultrawide",
+        "business"
+      ],
+      "description": "E45c G5 Curved offers stunning visuals with accurate colors and smooth refresh rates. Ideal for gaming, creative work, and productivity setups from HP.",
+      "specs": {
+        "panel": "IPS/OLED",
+        "resolution": "4K/QHD",
+        "refresh_rate": "120Hz+",
+        "connectivity": "USB-C, HDMI",
+        "warranty": "3 Years",
+        "model_number": "HP-033",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=1200",
+        "https://images.unsplash.com/photo-1618767689160-da3fb810aad7?q=80&w=1200",
+        "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?q=80&w=1200",
+        "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 34,
+      "title": "VP2786-4K",
+      "brand": "ViewSonic",
+      "price": 48990,
+      "category": "monitor",
+      "rating": 4.5,
+      "stock": 33,
+      "tags": [
+        "monitor",
+        "color-accurate"
+      ],
+      "description": "VP2786-4K offers stunning visuals with accurate colors and smooth refresh rates. Ideal for gaming, creative work, and productivity setups from ViewSonic.",
+      "specs": {
+        "panel": "IPS/OLED",
+        "resolution": "4K/QHD",
+        "refresh_rate": "120Hz+",
+        "connectivity": "USB-C, HDMI",
+        "warranty": "3 Years",
+        "model_number": "VIE-034",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=1200",
+        "https://images.unsplash.com/photo-1556155092-8707de7f9c92?q=80&w=1200",
+        "https://images.unsplash.com/photo-1633511091886-3d5b2a18c8f4?q=80&w=1200",
+        "https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 35,
+      "title": "M32U",
+      "brand": "Gigabyte",
+      "price": 39990,
+      "category": "monitor",
+      "rating": 4.6,
+      "stock": 72,
+      "tags": [
+        "monitor",
+        "4k",
+        "value"
+      ],
+      "description": "M32U offers stunning visuals with accurate colors and smooth refresh rates. Ideal for gaming, creative work, and productivity setups from Gigabyte.",
+      "specs": {
+        "panel": "IPS/OLED",
+        "resolution": "4K/QHD",
+        "refresh_rate": "120Hz+",
+        "connectivity": "USB-C, HDMI",
+        "warranty": "3 Years",
+        "model_number": "GIG-035",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1618767689160-da3fb810aad7?q=80&w=1200",
+        "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?q=80&w=1200",
+        "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 36,
+      "title": "Evnia 49M2C8900",
+      "brand": "Philips",
+      "price": 109990,
+      "category": "monitor",
+      "rating": 4.7,
+      "stock": 78,
+      "tags": [
+        "monitor",
+        "qd-oled",
+        "gaming"
+      ],
+      "description": "Evnia 49M2C8900 offers stunning visuals with accurate colors and smooth refresh rates. Ideal for gaming, creative work, and productivity setups from Philips.",
+      "specs": {
+        "panel": "IPS/OLED",
+        "resolution": "4K/QHD",
+        "refresh_rate": "120Hz+",
+        "connectivity": "USB-C, HDMI",
+        "warranty": "3 Years",
+        "model_number": "PHI-036",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1556155092-8707de7f9c92?q=80&w=1200",
+        "https://images.unsplash.com/photo-1633511091886-3d5b2a18c8f4?q=80&w=1200",
+        "https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?q=80&w=1200",
+        "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 37,
+      "title": "ThinkVision P32p-30",
+      "brand": "Lenovo",
+      "price": 62990,
+      "category": "monitor",
+      "rating": 4.5,
+      "stock": 16,
+      "tags": [
+        "monitor",
+        "business",
+        "4k"
+      ],
+      "description": "ThinkVision P32p-30 offers stunning visuals with accurate colors and smooth refresh rates. Ideal for gaming, creative work, and productivity setups from Lenovo.",
+      "specs": {
+        "panel": "IPS/OLED",
+        "resolution": "4K/QHD",
+        "refresh_rate": "120Hz+",
+        "connectivity": "USB-C, HDMI",
+        "warranty": "3 Years",
+        "model_number": "LEN-037",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?q=80&w=1200",
+        "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?q=80&w=1200",
+        "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=1200",
+        "https://images.unsplash.com/photo-1618767689160-da3fb810aad7?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 38,
+      "title": "Smart Monitor M8",
+      "brand": "Samsung",
+      "price": 44990,
+      "category": "monitor",
+      "rating": 4.4,
+      "stock": 98,
+      "tags": [
+        "monitor",
+        "smart",
+        "streaming"
+      ],
+      "description": "Smart Monitor M8 offers stunning visuals with accurate colors and smooth refresh rates. Ideal for gaming, creative work, and productivity setups from Samsung.",
+      "specs": {
+        "panel": "IPS/OLED",
+        "resolution": "4K/QHD",
+        "refresh_rate": "120Hz+",
+        "connectivity": "USB-C, HDMI",
+        "warranty": "3 Years",
+        "model_number": "SAM-038",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1633511091886-3d5b2a18c8f4?q=80&w=1200",
+        "https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?q=80&w=1200",
+        "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=1200",
+        "https://images.unsplash.com/photo-1556155092-8707de7f9c92?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 39,
+      "title": "ZenScreen MB16AC",
+      "brand": "ASUS",
+      "price": 24990,
+      "category": "monitor",
+      "rating": 4.3,
+      "stock": 16,
+      "tags": [
+        "monitor",
+        "portable",
+        "usb-c"
+      ],
+      "description": "ZenScreen MB16AC offers stunning visuals with accurate colors and smooth refresh rates. Ideal for gaming, creative work, and productivity setups from ASUS.",
+      "specs": {
+        "panel": "IPS/OLED",
+        "resolution": "4K/QHD",
+        "refresh_rate": "120Hz+",
+        "connectivity": "USB-C, HDMI",
+        "warranty": "3 Years",
+        "model_number": "ASU-039",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?q=80&w=1200",
+        "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=1200",
+        "https://images.unsplash.com/photo-1618767689160-da3fb810aad7?q=80&w=1200",
+        "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 40,
+      "title": "DualUp 28MQ780",
+      "brand": "LG",
+      "price": 69990,
+      "category": "monitor",
+      "rating": 4.6,
+      "stock": 64,
+      "tags": [
+        "monitor",
+        "ergonomic",
+        "productivity"
+      ],
+      "description": "DualUp 28MQ780 offers stunning visuals with accurate colors and smooth refresh rates. Ideal for gaming, creative work, and productivity setups from LG.",
+      "specs": {
+        "panel": "IPS/OLED",
+        "resolution": "4K/QHD",
+        "refresh_rate": "120Hz+",
+        "connectivity": "USB-C, HDMI",
+        "warranty": "3 Years",
+        "model_number": "LG-040",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?q=80&w=1200",
+        "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=1200",
+        "https://images.unsplash.com/photo-1556155092-8707de7f9c92?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 41,
+      "title": "WH-1000XM5",
+      "brand": "Sony",
+      "price": 29990,
+      "category": "audio",
+      "rating": 4.9,
+      "stock": 19,
+      "tags": [
+        "audio",
+        "headphones",
+        "anc"
+      ],
+      "description": "WH-1000XM5 brings immersive sound with premium drivers and smart features. Experience rich audio quality crafted by Sony for music lovers and commuters alike.",
+      "specs": {
+        "type": "Wireless",
+        "battery": "30+ hours",
+        "connectivity": "Bluetooth 5.3",
+        "features": "ANC",
+        "warranty": "1 Year",
+        "model_number": "SON-041",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=1200",
+        "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1599669454699-248893623440?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 42,
+      "title": "WF-1000XM5",
+      "brand": "Sony",
+      "price": 24990,
+      "category": "audio",
+      "rating": 4.8,
+      "stock": 98,
+      "tags": [
+        "audio",
+        "earbuds",
+        "anc"
+      ],
+      "description": "WF-1000XM5 brings immersive sound with premium drivers and smart features. Experience rich audio quality crafted by Sony for music lovers and commuters alike.",
+      "specs": {
+        "type": "Wireless",
+        "battery": "30+ hours",
+        "connectivity": "Bluetooth 5.3",
+        "features": "ANC",
+        "warranty": "1 Year",
+        "model_number": "SON-042",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=1200",
+        "https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=1200",
+        "https://images.unsplash.com/photo-1545127398-14699f92334b?q=80&w=1200",
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 43,
+      "title": "AirPods Pro 2",
+      "brand": "Apple",
+      "price": 24900,
+      "category": "audio",
+      "rating": 4.8,
+      "stock": 26,
+      "tags": [
+        "audio",
+        "earbuds",
+        "apple"
+      ],
+      "description": "AirPods Pro 2 brings immersive sound with premium drivers and smart features. Experience rich audio quality crafted by Apple for music lovers and commuters alike.",
+      "specs": {
+        "type": "Wireless",
+        "battery": "30+ hours",
+        "connectivity": "Bluetooth 5.3",
+        "features": "ANC",
+        "warranty": "1 Year",
+        "model_number": "APP-043",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1599669454699-248893623440?q=80&w=1200",
+        "https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 44,
+      "title": "AirPods Max",
+      "brand": "Apple",
+      "price": 59900,
+      "category": "audio",
+      "rating": 4.6,
+      "stock": 52,
+      "tags": [
+        "audio",
+        "headphones",
+        "apple"
+      ],
+      "description": "AirPods Max brings immersive sound with premium drivers and smart features. Experience rich audio quality crafted by Apple for music lovers and commuters alike.",
+      "specs": {
+        "type": "Wireless",
+        "battery": "30+ hours",
+        "connectivity": "Bluetooth 5.3",
+        "features": "ANC",
+        "warranty": "1 Year",
+        "model_number": "APP-044",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=1200",
+        "https://images.unsplash.com/photo-1545127398-14699f92334b?q=80&w=1200",
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1200",
+        "https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 45,
+      "title": "QuietComfort Ultra",
+      "brand": "Bose",
+      "price": 34900,
+      "category": "audio",
+      "rating": 4.8,
+      "stock": 84,
+      "tags": [
+        "audio",
+        "headphones",
+        "bose"
+      ],
+      "description": "QuietComfort Ultra brings immersive sound with premium drivers and smart features. Experience rich audio quality crafted by Bose for music lovers and commuters alike.",
+      "specs": {
+        "type": "Wireless",
+        "battery": "30+ hours",
+        "connectivity": "Bluetooth 5.3",
+        "features": "ANC",
+        "warranty": "1 Year",
+        "model_number": "BOS-045",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1599669454699-248893623440?q=80&w=1200",
+        "https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 46,
+      "title": "QuietComfort Earbuds II",
+      "brand": "Bose",
+      "price": 27900,
+      "category": "audio",
+      "rating": 4.7,
+      "stock": 49,
+      "tags": [
+        "audio",
+        "earbuds",
+        "bose"
+      ],
+      "description": "QuietComfort Earbuds II brings immersive sound with premium drivers and smart features. Experience rich audio quality crafted by Bose for music lovers and commuters alike.",
+      "specs": {
+        "type": "Wireless",
+        "battery": "30+ hours",
+        "connectivity": "Bluetooth 5.3",
+        "features": "ANC",
+        "warranty": "1 Year",
+        "model_number": "BOS-046",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1545127398-14699f92334b?q=80&w=1200",
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1200",
+        "https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=1200",
+        "https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 47,
+      "title": "Momentum 4 Wireless",
+      "brand": "Sennheiser",
+      "price": 32990,
+      "category": "audio",
+      "rating": 4.7,
+      "stock": 23,
+      "tags": [
+        "audio",
+        "headphones",
+        "audiophile"
+      ],
+      "description": "Momentum 4 Wireless brings immersive sound with premium drivers and smart features. Experience rich audio quality crafted by Sennheiser for music lovers and commuters alike.",
+      "specs": {
+        "type": "Wireless",
+        "battery": "30+ hours",
+        "connectivity": "Bluetooth 5.3",
+        "features": "ANC",
+        "warranty": "1 Year",
+        "model_number": "SEN-047",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1599669454699-248893623440?q=80&w=1200",
+        "https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=1200",
+        "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 48,
+      "title": "HD 660S2",
+      "brand": "Sennheiser",
+      "price": 44990,
+      "category": "audio",
+      "rating": 4.9,
+      "stock": 67,
+      "tags": [
+        "audio",
+        "headphones",
+        "wired"
+      ],
+      "description": "HD 660S2 brings immersive sound with premium drivers and smart features. Experience rich audio quality crafted by Sennheiser for music lovers and commuters alike.",
+      "specs": {
+        "type": "Wireless",
+        "battery": "30+ hours",
+        "connectivity": "Bluetooth 5.3",
+        "features": "ANC",
+        "warranty": "1 Year",
+        "model_number": "SEN-048",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1200",
+        "https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=1200",
+        "https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=1200",
+        "https://images.unsplash.com/photo-1545127398-14699f92334b?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 49,
+      "title": "Tour One M2",
+      "brand": "JBL",
+      "price": 24999,
+      "category": "audio",
+      "rating": 4.5,
+      "stock": 46,
+      "tags": [
+        "audio",
+        "headphones",
+        "jbl"
+      ],
+      "description": "Tour One M2 brings immersive sound with premium drivers and smart features. Experience rich audio quality crafted by JBL for music lovers and commuters alike.",
+      "specs": {
+        "type": "Wireless",
+        "battery": "30+ hours",
+        "connectivity": "Bluetooth 5.3",
+        "features": "ANC",
+        "warranty": "1 Year",
+        "model_number": "JBL-049",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=1200",
+        "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1599669454699-248893623440?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 50,
+      "title": "Charge 5 Speaker",
+      "brand": "JBL",
+      "price": 14999,
+      "category": "audio",
+      "rating": 4.6,
+      "stock": 46,
+      "tags": [
+        "audio",
+        "speaker",
+        "portable"
+      ],
+      "description": "Charge 5 Speaker brings immersive sound with premium drivers and smart features. Experience rich audio quality crafted by JBL for music lovers and commuters alike.",
+      "specs": {
+        "type": "Wireless",
+        "battery": "30+ hours",
+        "connectivity": "Bluetooth 5.3",
+        "features": "ANC",
+        "warranty": "1 Year",
+        "model_number": "JBL-050",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=1200",
+        "https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=1200",
+        "https://images.unsplash.com/photo-1545127398-14699f92334b?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 51,
+      "title": "Beoplay H95",
+      "brand": "Bang & Olufsen",
+      "price": 79990,
+      "category": "audio",
+      "rating": 4.8,
+      "stock": 53,
+      "tags": [
+        "audio",
+        "luxury",
+        "headphones"
+      ],
+      "description": "Beoplay H95 brings immersive sound with premium drivers and smart features. Experience rich audio quality crafted by Bang & Olufsen for music lovers and commuters alike.",
+      "specs": {
+        "type": "Wireless",
+        "battery": "30+ hours",
+        "connectivity": "Bluetooth 5.3",
+        "features": "ANC",
+        "warranty": "1 Year",
+        "model_number": "BAN-051",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1599669454699-248893623440?q=80&w=1200",
+        "https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 52,
+      "title": "Motif II ANC",
+      "brand": "Marshall",
+      "price": 17999,
+      "category": "audio",
+      "rating": 4.5,
+      "stock": 93,
+      "tags": [
+        "audio",
+        "earbuds",
+        "marshall"
+      ],
+      "description": "Motif II ANC brings immersive sound with premium drivers and smart features. Experience rich audio quality crafted by Marshall for music lovers and commuters alike.",
+      "specs": {
+        "type": "Wireless",
+        "battery": "30+ hours",
+        "connectivity": "Bluetooth 5.3",
+        "features": "ANC",
+        "warranty": "1 Year",
+        "model_number": "MAR-052",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=1200",
+        "https://images.unsplash.com/photo-1545127398-14699f92334b?q=80&w=1200",
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1200",
+        "https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 53,
+      "title": "ATH-M50xBT2",
+      "brand": "Audio-Technica",
+      "price": 18990,
+      "category": "audio",
+      "rating": 4.7,
+      "stock": 75,
+      "tags": [
+        "audio",
+        "headphones",
+        "studio"
+      ],
+      "description": "ATH-M50xBT2 brings immersive sound with premium drivers and smart features. Experience rich audio quality crafted by Audio-Technica for music lovers and commuters alike.",
+      "specs": {
+        "type": "Wireless",
+        "battery": "30+ hours",
+        "connectivity": "Bluetooth 5.3",
+        "features": "ANC",
+        "warranty": "1 Year",
+        "model_number": "AUD-053",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1599669454699-248893623440?q=80&w=1200",
+        "https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=1200",
+        "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 54,
+      "title": "Amiron 300",
+      "brand": "Beyerdynamic",
+      "price": 22990,
+      "category": "audio",
+      "rating": 4.6,
+      "stock": 28,
+      "tags": [
+        "audio",
+        "earbuds",
+        "german"
+      ],
+      "description": "Amiron 300 brings immersive sound with premium drivers and smart features. Experience rich audio quality crafted by Beyerdynamic for music lovers and commuters alike.",
+      "specs": {
+        "type": "Wireless",
+        "battery": "30+ hours",
+        "connectivity": "Bluetooth 5.3",
+        "features": "ANC",
+        "warranty": "1 Year",
+        "model_number": "BEY-054",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1545127398-14699f92334b?q=80&w=1200",
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1200",
+        "https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=1200",
+        "https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 55,
+      "title": "Era 300",
+      "brand": "Sonos",
+      "price": 44999,
+      "category": "audio",
+      "rating": 4.7,
+      "stock": 48,
+      "tags": [
+        "audio",
+        "speaker",
+        "spatial"
+      ],
+      "description": "Era 300 brings immersive sound with premium drivers and smart features. Experience rich audio quality crafted by Sonos for music lovers and commuters alike.",
+      "specs": {
+        "type": "Wireless",
+        "battery": "30+ hours",
+        "connectivity": "Bluetooth 5.3",
+        "features": "ANC",
+        "warranty": "1 Year",
+        "model_number": "SON-055",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1599669454699-248893623440?q=80&w=1200",
+        "https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=1200",
+        "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 56,
+      "title": "Arc Gen 2",
+      "brand": "Sonos",
+      "price": 89999,
+      "category": "audio",
+      "rating": 4.8,
+      "stock": 36,
+      "tags": [
+        "audio",
+        "soundbar",
+        "dolby-atmos"
+      ],
+      "description": "Arc Gen 2 brings immersive sound with premium drivers and smart features. Experience rich audio quality crafted by Sonos for music lovers and commuters alike.",
+      "specs": {
+        "type": "Wireless",
+        "battery": "30+ hours",
+        "connectivity": "Bluetooth 5.3",
+        "features": "ANC",
+        "warranty": "1 Year",
+        "model_number": "SON-056",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1200",
+        "https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=1200",
+        "https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=1200",
+        "https://images.unsplash.com/photo-1545127398-14699f92334b?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 57,
+      "title": "Ear (2)",
+      "brand": "Nothing",
+      "price": 8999,
+      "category": "audio",
+      "rating": 4.4,
+      "stock": 34,
+      "tags": [
+        "audio",
+        "earbuds",
+        "budget"
+      ],
+      "description": "Ear (2) brings immersive sound with premium drivers and smart features. Experience rich audio quality crafted by Nothing for music lovers and commuters alike.",
+      "specs": {
+        "type": "Wireless",
+        "battery": "30+ hours",
+        "connectivity": "Bluetooth 5.3",
+        "features": "ANC",
+        "warranty": "1 Year",
+        "model_number": "NOT-057",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=1200",
+        "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1599669454699-248893623440?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 58,
+      "title": "Galaxy Buds3 Pro",
+      "brand": "Samsung",
+      "price": 17999,
+      "category": "audio",
+      "rating": 4.6,
+      "stock": 87,
+      "tags": [
+        "audio",
+        "earbuds",
+        "samsung"
+      ],
+      "description": "Galaxy Buds3 Pro brings immersive sound with premium drivers and smart features. Experience rich audio quality crafted by Samsung for music lovers and commuters alike.",
+      "specs": {
+        "type": "Wireless",
+        "battery": "30+ hours",
+        "connectivity": "Bluetooth 5.3",
+        "features": "ANC",
+        "warranty": "1 Year",
+        "model_number": "SAM-058",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=1200",
+        "https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=1200",
+        "https://images.unsplash.com/photo-1545127398-14699f92334b?q=80&w=1200",
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 59,
+      "title": "AONIC 50 Gen 2",
+      "brand": "Shure",
+      "price": 39990,
+      "category": "audio",
+      "rating": 4.7,
+      "stock": 49,
+      "tags": [
+        "audio",
+        "headphones",
+        "pro"
+      ],
+      "description": "AONIC 50 Gen 2 brings immersive sound with premium drivers and smart features. Experience rich audio quality crafted by Shure for music lovers and commuters alike.",
+      "specs": {
+        "type": "Wireless",
+        "battery": "30+ hours",
+        "connectivity": "Bluetooth 5.3",
+        "features": "ANC",
+        "warranty": "1 Year",
+        "model_number": "SHU-059",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1599669454699-248893623440?q=80&w=1200",
+        "https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 60,
+      "title": "Bathys",
+      "brand": "Focal",
+      "price": 69990,
+      "category": "audio",
+      "rating": 4.8,
+      "stock": 48,
+      "tags": [
+        "audio",
+        "headphones",
+        "hi-fi"
+      ],
+      "description": "Bathys brings immersive sound with premium drivers and smart features. Experience rich audio quality crafted by Focal for music lovers and commuters alike.",
+      "specs": {
+        "type": "Wireless",
+        "battery": "30+ hours",
+        "connectivity": "Bluetooth 5.3",
+        "features": "ANC",
+        "warranty": "1 Year",
+        "model_number": "FOC-060",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=1200",
+        "https://images.unsplash.com/photo-1545127398-14699f92334b?q=80&w=1200",
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 61,
+      "title": "MX Master 3S",
+      "brand": "Logitech",
+      "price": 9995,
+      "category": "accessories",
+      "rating": 4.8,
+      "stock": 92,
+      "tags": [
+        "accessories",
+        "mouse",
+        "productivity"
+      ],
+      "description": "MX Master 3S elevates your desk setup with thoughtful design and reliable performance. A must-have accessory from Logitech for everyday productivity.",
+      "specs": {
+        "connectivity": "Wireless/USB-C",
+        "compatibility": "Multi-platform",
+        "color": "Black",
+        "warranty": "2 Years",
+        "model_number": "LOG-061",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1593642632559-268c975a9fcc?q=80&w=1200",
+        "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?q=80&w=1200",
+        "https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=1200",
+        "https://images.unsplash.com/photo-1615663243237-a53ac7d5c3eb?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 62,
+      "title": "MX Keys S",
+      "brand": "Logitech",
+      "price": 10995,
+      "category": "accessories",
+      "rating": 4.7,
+      "stock": 24,
+      "tags": [
+        "accessories",
+        "keyboard",
+        "wireless"
+      ],
+      "description": "MX Keys S elevates your desk setup with thoughtful design and reliable performance. A must-have accessory from Logitech for everyday productivity.",
+      "specs": {
+        "connectivity": "Wireless/USB-C",
+        "compatibility": "Multi-platform",
+        "color": "Black",
+        "warranty": "2 Years",
+        "model_number": "LOG-062",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1527814050087-3793815479db?q=80&w=1200",
+        "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?q=80&w=1200",
+        "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=1200",
+        "https://images.unsplash.com/photo-1625948515291-69613efd202f?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 63,
+      "title": "Q1 Pro",
+      "brand": "Keychron",
+      "price": 16999,
+      "category": "accessories",
+      "rating": 4.7,
+      "stock": 47,
+      "tags": [
+        "accessories",
+        "keyboard",
+        "mechanical"
+      ],
+      "description": "Q1 Pro elevates your desk setup with thoughtful design and reliable performance. A must-have accessory from Keychron for everyday productivity.",
+      "specs": {
+        "connectivity": "Wireless/USB-C",
+        "compatibility": "Multi-platform",
+        "color": "Black",
+        "warranty": "2 Years",
+        "model_number": "KEY-063",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?q=80&w=1200",
+        "https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=1200",
+        "https://images.unsplash.com/photo-1615663243237-a53ac7d5c3eb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1593642632559-268c975a9fcc?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 64,
+      "title": "K3 Pro",
+      "brand": "Keychron",
+      "price": 11999,
+      "category": "accessories",
+      "rating": 4.6,
+      "stock": 86,
+      "tags": [
+        "accessories",
+        "keyboard",
+        "compact"
+      ],
+      "description": "K3 Pro elevates your desk setup with thoughtful design and reliable performance. A must-have accessory from Keychron for everyday productivity.",
+      "specs": {
+        "connectivity": "Wireless/USB-C",
+        "compatibility": "Multi-platform",
+        "color": "Black",
+        "warranty": "2 Years",
+        "model_number": "KEY-064",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?q=80&w=1200",
+        "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=1200",
+        "https://images.unsplash.com/photo-1625948515291-69613efd202f?q=80&w=1200",
+        "https://images.unsplash.com/photo-1527814050087-3793815479db?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 65,
+      "title": "DeathAdder V3 Pro",
+      "brand": "Razer",
+      "price": 12999,
+      "category": "accessories",
+      "rating": 4.7,
+      "stock": 94,
+      "tags": [
+        "accessories",
+        "mouse",
+        "gaming"
+      ],
+      "description": "DeathAdder V3 Pro elevates your desk setup with thoughtful design and reliable performance. A must-have accessory from Razer for everyday productivity.",
+      "specs": {
+        "connectivity": "Wireless/USB-C",
+        "compatibility": "Multi-platform",
+        "color": "Black",
+        "warranty": "2 Years",
+        "model_number": "RAZ-065",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=1200",
+        "https://images.unsplash.com/photo-1615663243237-a53ac7d5c3eb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1593642632559-268c975a9fcc?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 66,
+      "title": "BlackWidow V4 Pro",
+      "brand": "Razer",
+      "price": 22999,
+      "category": "accessories",
+      "rating": 4.6,
+      "stock": 82,
+      "tags": [
+        "accessories",
+        "keyboard",
+        "gaming"
+      ],
+      "description": "BlackWidow V4 Pro elevates your desk setup with thoughtful design and reliable performance. A must-have accessory from Razer for everyday productivity.",
+      "specs": {
+        "connectivity": "Wireless/USB-C",
+        "compatibility": "Multi-platform",
+        "color": "Black",
+        "warranty": "2 Years",
+        "model_number": "RAZ-066",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=1200",
+        "https://images.unsplash.com/photo-1625948515291-69613efd202f?q=80&w=1200",
+        "https://images.unsplash.com/photo-1527814050087-3793815479db?q=80&w=1200",
+        "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 67,
+      "title": "Magic Keyboard",
+      "brand": "Apple",
+      "price": 10900,
+      "category": "accessories",
+      "rating": 4.5,
+      "stock": 24,
+      "tags": [
+        "accessories",
+        "keyboard",
+        "apple"
+      ],
+      "description": "Magic Keyboard elevates your desk setup with thoughtful design and reliable performance. A must-have accessory from Apple for everyday productivity.",
+      "specs": {
+        "connectivity": "Wireless/USB-C",
+        "compatibility": "Multi-platform",
+        "color": "Black",
+        "warranty": "2 Years",
+        "model_number": "APP-067",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1615663243237-a53ac7d5c3eb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1593642632559-268c975a9fcc?q=80&w=1200",
+        "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?q=80&w=1200",
+        "https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 68,
+      "title": "Magic Trackpad",
+      "brand": "Apple",
+      "price": 12500,
+      "category": "accessories",
+      "rating": 4.6,
+      "stock": 92,
+      "tags": [
+        "accessories",
+        "trackpad",
+        "apple"
+      ],
+      "description": "Magic Trackpad elevates your desk setup with thoughtful design and reliable performance. A must-have accessory from Apple for everyday productivity.",
+      "specs": {
+        "connectivity": "Wireless/USB-C",
+        "compatibility": "Multi-platform",
+        "color": "Black",
+        "warranty": "2 Years",
+        "model_number": "APP-068",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1625948515291-69613efd202f?q=80&w=1200",
+        "https://images.unsplash.com/photo-1527814050087-3793815479db?q=80&w=1200",
+        "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?q=80&w=1200",
+        "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 69,
+      "title": "737 Power Bank 240W",
+      "brand": "Anker",
+      "price": 14999,
+      "category": "accessories",
+      "rating": 4.6,
+      "stock": 57,
+      "tags": [
+        "accessories",
+        "charger",
+        "power-bank"
+      ],
+      "description": "737 Power Bank 240W elevates your desk setup with thoughtful design and reliable performance. A must-have accessory from Anker for everyday productivity.",
+      "specs": {
+        "connectivity": "Wireless/USB-C",
+        "compatibility": "Multi-platform",
+        "color": "Black",
+        "warranty": "2 Years",
+        "model_number": "ANK-069",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1593642632559-268c975a9fcc?q=80&w=1200",
+        "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?q=80&w=1200",
+        "https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=1200",
+        "https://images.unsplash.com/photo-1615663243237-a53ac7d5c3eb?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 70,
+      "title": "BoostCharge Pro 3-in-1",
+      "brand": "Belkin",
+      "price": 18999,
+      "category": "accessories",
+      "rating": 4.5,
+      "stock": 26,
+      "tags": [
+        "accessories",
+        "charger",
+        "magsafe"
+      ],
+      "description": "BoostCharge Pro 3-in-1 elevates your desk setup with thoughtful design and reliable performance. A must-have accessory from Belkin for everyday productivity.",
+      "specs": {
+        "connectivity": "Wireless/USB-C",
+        "compatibility": "Multi-platform",
+        "color": "Black",
+        "warranty": "2 Years",
+        "model_number": "BEL-070",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1527814050087-3793815479db?q=80&w=1200",
+        "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?q=80&w=1200",
+        "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 71,
+      "title": "Stream Deck MK.2",
+      "brand": "Elgato",
+      "price": 14999,
+      "category": "accessories",
+      "rating": 4.8,
+      "stock": 54,
+      "tags": [
+        "accessories",
+        "streaming",
+        "creator"
+      ],
+      "description": "Stream Deck MK.2 elevates your desk setup with thoughtful design and reliable performance. A must-have accessory from Elgato for everyday productivity.",
+      "specs": {
+        "connectivity": "Wireless/USB-C",
+        "compatibility": "Multi-platform",
+        "color": "Black",
+        "warranty": "2 Years",
+        "model_number": "ELG-071",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?q=80&w=1200",
+        "https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=1200",
+        "https://images.unsplash.com/photo-1615663243237-a53ac7d5c3eb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1593642632559-268c975a9fcc?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 72,
+      "title": "Intuos Pro M",
+      "brand": "Wacom",
+      "price": 32990,
+      "category": "accessories",
+      "rating": 4.7,
+      "stock": 91,
+      "tags": [
+        "accessories",
+        "tablet",
+        "design"
+      ],
+      "description": "Intuos Pro M elevates your desk setup with thoughtful design and reliable performance. A must-have accessory from Wacom for everyday productivity.",
+      "specs": {
+        "connectivity": "Wireless/USB-C",
+        "compatibility": "Multi-platform",
+        "color": "Black",
+        "warranty": "2 Years",
+        "model_number": "WAC-072",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?q=80&w=1200",
+        "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=1200",
+        "https://images.unsplash.com/photo-1625948515291-69613efd202f?q=80&w=1200",
+        "https://images.unsplash.com/photo-1527814050087-3793815479db?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 73,
+      "title": "TS4 Thunderbolt Dock",
+      "brand": "CalDigit",
+      "price": 39990,
+      "category": "accessories",
+      "rating": 4.8,
+      "stock": 52,
+      "tags": [
+        "accessories",
+        "dock",
+        "thunderbolt"
+      ],
+      "description": "TS4 Thunderbolt Dock elevates your desk setup with thoughtful design and reliable performance. A must-have accessory from CalDigit for everyday productivity.",
+      "specs": {
+        "connectivity": "Wireless/USB-C",
+        "compatibility": "Multi-platform",
+        "color": "Black",
+        "warranty": "2 Years",
+        "model_number": "CAL-073",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=1200",
+        "https://images.unsplash.com/photo-1615663243237-a53ac7d5c3eb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1593642632559-268c975a9fcc?q=80&w=1200",
+        "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 74,
+      "title": "Cloud III Wireless",
+      "brand": "HyperX",
+      "price": 14999,
+      "category": "accessories",
+      "rating": 4.5,
+      "stock": 44,
+      "tags": [
+        "accessories",
+        "headset",
+        "gaming"
+      ],
+      "description": "Cloud III Wireless elevates your desk setup with thoughtful design and reliable performance. A must-have accessory from HyperX for everyday productivity.",
+      "specs": {
+        "connectivity": "Wireless/USB-C",
+        "compatibility": "Multi-platform",
+        "color": "Black",
+        "warranty": "2 Years",
+        "model_number": "HYP-074",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=1200",
+        "https://images.unsplash.com/photo-1625948515291-69613efd202f?q=80&w=1200",
+        "https://images.unsplash.com/photo-1527814050087-3793815479db?q=80&w=1200",
+        "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 75,
+      "title": "Apex Pro TKL",
+      "brand": "SteelSeries",
+      "price": 19999,
+      "category": "accessories",
+      "rating": 4.7,
+      "stock": 59,
+      "tags": [
+        "accessories",
+        "keyboard",
+        "gaming"
+      ],
+      "description": "Apex Pro TKL elevates your desk setup with thoughtful design and reliable performance. A must-have accessory from SteelSeries for everyday productivity.",
+      "specs": {
+        "connectivity": "Wireless/USB-C",
+        "compatibility": "Multi-platform",
+        "color": "Black",
+        "warranty": "2 Years",
+        "model_number": "STE-075",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1615663243237-a53ac7d5c3eb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1593642632559-268c975a9fcc?q=80&w=1200",
+        "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 76,
+      "title": "Tech Pouch",
+      "brand": "Peak Design",
+      "price": 5999,
+      "category": "accessories",
+      "rating": 4.6,
+      "stock": 38,
+      "tags": [
+        "accessories",
+        "organizer",
+        "travel"
+      ],
+      "description": "Tech Pouch elevates your desk setup with thoughtful design and reliable performance. A must-have accessory from Peak Design for everyday productivity.",
+      "specs": {
+        "connectivity": "Wireless/USB-C",
+        "compatibility": "Multi-platform",
+        "color": "Black",
+        "warranty": "2 Years",
+        "model_number": "PEA-076",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1625948515291-69613efd202f?q=80&w=1200",
+        "https://images.unsplash.com/photo-1527814050087-3793815479db?q=80&w=1200",
+        "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?q=80&w=1200",
+        "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 77,
+      "title": "Curve Flex Stand",
+      "brand": "Twelve South",
+      "price": 6999,
+      "category": "accessories",
+      "rating": 4.5,
+      "stock": 39,
+      "tags": [
+        "accessories",
+        "stand",
+        "laptop"
+      ],
+      "description": "Curve Flex Stand elevates your desk setup with thoughtful design and reliable performance. A must-have accessory from Twelve South for everyday productivity.",
+      "specs": {
+        "connectivity": "Wireless/USB-C",
+        "compatibility": "Multi-platform",
+        "color": "Black",
+        "warranty": "2 Years",
+        "model_number": "TWE-077",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1593642632559-268c975a9fcc?q=80&w=1200",
+        "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?q=80&w=1200",
+        "https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=1200",
+        "https://images.unsplash.com/photo-1615663243237-a53ac7d5c3eb?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 78,
+      "title": "Revodok Pro 209",
+      "brand": "UGREEN",
+      "price": 8999,
+      "category": "accessories",
+      "rating": 4.4,
+      "stock": 44,
+      "tags": [
+        "accessories",
+        "dock",
+        "usb-c"
+      ],
+      "description": "Revodok Pro 209 elevates your desk setup with thoughtful design and reliable performance. A must-have accessory from UGREEN for everyday productivity.",
+      "specs": {
+        "connectivity": "Wireless/USB-C",
+        "compatibility": "Multi-platform",
+        "color": "Black",
+        "warranty": "2 Years",
+        "model_number": "UGR-078",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1527814050087-3793815479db?q=80&w=1200",
+        "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?q=80&w=1200",
+        "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=1200",
+        "https://images.unsplash.com/photo-1625948515291-69613efd202f?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 79,
+      "title": "Brio 4K Webcam",
+      "brand": "Logitech",
+      "price": 19995,
+      "category": "accessories",
+      "rating": 4.6,
+      "stock": 56,
+      "tags": [
+        "accessories",
+        "webcam",
+        "4k"
+      ],
+      "description": "Brio 4K Webcam elevates your desk setup with thoughtful design and reliable performance. A must-have accessory from Logitech for everyday productivity.",
+      "specs": {
+        "connectivity": "Wireless/USB-C",
+        "compatibility": "Multi-platform",
+        "color": "Black",
+        "warranty": "2 Years",
+        "model_number": "LOG-079",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?q=80&w=1200",
+        "https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=1200",
+        "https://images.unsplash.com/photo-1615663243237-a53ac7d5c3eb?q=80&w=1200",
+        "https://images.unsplash.com/photo-1593642632559-268c975a9fcc?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 80,
+      "title": "Magnus Pro Desk",
+      "brand": "Secretlab",
+      "price": 79999,
+      "category": "accessories",
+      "rating": 4.7,
+      "stock": 93,
+      "tags": [
+        "accessories",
+        "desk",
+        "ergonomic"
+      ],
+      "description": "Magnus Pro Desk elevates your desk setup with thoughtful design and reliable performance. A must-have accessory from Secretlab for everyday productivity.",
+      "specs": {
+        "connectivity": "Wireless/USB-C",
+        "compatibility": "Multi-platform",
+        "color": "Black",
+        "warranty": "2 Years",
+        "model_number": "SEC-080",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?q=80&w=1200",
+        "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=1200",
+        "https://images.unsplash.com/photo-1625948515291-69613efd202f?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 81,
+      "title": "990 Pro 2TB NVMe",
+      "brand": "Samsung",
+      "price": 18999,
+      "category": "storage",
+      "rating": 4.9,
+      "stock": 63,
+      "tags": [
+        "storage",
+        "ssd",
+        "nvme"
+      ],
+      "description": "990 Pro 2TB NVMe provides blazing-fast speeds and dependable storage for your files, games, and projects. Trusted Samsung technology for expanding your digital workspace.",
+      "specs": {
+        "capacity": "2TB",
+        "interface": "NVMe/USB 3.2",
+        "read_speed": "7000 MB/s",
+        "form_factor": "M.2/Portable",
+        "warranty": "5 Years",
+        "model_number": "SAM-081",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1611174743420-3d7df880ce32?q=80&w=1200",
+        "https://images.unsplash.com/photo-1580894908361-967195033215?q=80&w=1200",
+        "https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=1200",
+        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 82,
+      "title": "T7 Shield 2TB",
+      "brand": "Samsung",
+      "price": 16999,
+      "category": "storage",
+      "rating": 4.8,
+      "stock": 54,
+      "tags": [
+        "storage",
+        "portable",
+        "ssd"
+      ],
+      "description": "T7 Shield 2TB provides blazing-fast speeds and dependable storage for your files, games, and projects. Trusted Samsung technology for expanding your digital workspace.",
+      "specs": {
+        "capacity": "2TB",
+        "interface": "NVMe/USB 3.2",
+        "read_speed": "7000 MB/s",
+        "form_factor": "M.2/Portable",
+        "warranty": "5 Years",
+        "model_number": "SAM-082",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1531492746076-161ca9bc6b53?q=80&w=1200",
+        "https://images.unsplash.com/photo-1601737487795-dab272f52420?q=80&w=1200",
+        "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=1200",
+        "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 83,
+      "title": "Black SN850X 2TB",
+      "brand": "WD",
+      "price": 17499,
+      "category": "storage",
+      "rating": 4.8,
+      "stock": 48,
+      "tags": [
+        "storage",
+        "ssd",
+        "gaming"
+      ],
+      "description": "Black SN850X 2TB provides blazing-fast speeds and dependable storage for your files, games, and projects. Trusted WD technology for expanding your digital workspace.",
+      "specs": {
+        "capacity": "2TB",
+        "interface": "NVMe/USB 3.2",
+        "read_speed": "7000 MB/s",
+        "form_factor": "M.2/Portable",
+        "warranty": "5 Years",
+        "model_number": "WD-083",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1580894908361-967195033215?q=80&w=1200",
+        "https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=1200",
+        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200",
+        "https://images.unsplash.com/photo-1611174743420-3d7df880ce32?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 84,
+      "title": "My Passport 5TB",
+      "brand": "WD",
+      "price": 12999,
+      "category": "storage",
+      "rating": 4.5,
+      "stock": 25,
+      "tags": [
+        "storage",
+        "hdd",
+        "portable"
+      ],
+      "description": "My Passport 5TB provides blazing-fast speeds and dependable storage for your files, games, and projects. Trusted WD technology for expanding your digital workspace.",
+      "specs": {
+        "capacity": "2TB",
+        "interface": "NVMe/USB 3.2",
+        "read_speed": "7000 MB/s",
+        "form_factor": "M.2/Portable",
+        "warranty": "5 Years",
+        "model_number": "WD-084",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1601737487795-dab272f52420?q=80&w=1200",
+        "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=1200",
+        "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=1200",
+        "https://images.unsplash.com/photo-1531492746076-161ca9bc6b53?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 85,
+      "title": "Extreme PRO 2TB",
+      "brand": "SanDisk",
+      "price": 21999,
+      "category": "storage",
+      "rating": 4.7,
+      "stock": 77,
+      "tags": [
+        "storage",
+        "portable",
+        "rugged"
+      ],
+      "description": "Extreme PRO 2TB provides blazing-fast speeds and dependable storage for your files, games, and projects. Trusted SanDisk technology for expanding your digital workspace.",
+      "specs": {
+        "capacity": "2TB",
+        "interface": "NVMe/USB 3.2",
+        "read_speed": "7000 MB/s",
+        "form_factor": "M.2/Portable",
+        "warranty": "5 Years",
+        "model_number": "SAN-085",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=1200",
+        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200",
+        "https://images.unsplash.com/photo-1611174743420-3d7df880ce32?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 86,
+      "title": "T700 2TB Gen5",
+      "brand": "Crucial",
+      "price": 24999,
+      "category": "storage",
+      "rating": 4.8,
+      "stock": 36,
+      "tags": [
+        "storage",
+        "ssd",
+        "gen5"
+      ],
+      "description": "T700 2TB Gen5 provides blazing-fast speeds and dependable storage for your files, games, and projects. Trusted Crucial technology for expanding your digital workspace.",
+      "specs": {
+        "capacity": "2TB",
+        "interface": "NVMe/USB 3.2",
+        "read_speed": "7000 MB/s",
+        "form_factor": "M.2/Portable",
+        "warranty": "5 Years",
+        "model_number": "CRU-086",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=1200",
+        "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=1200",
+        "https://images.unsplash.com/photo-1531492746076-161ca9bc6b53?q=80&w=1200",
+        "https://images.unsplash.com/photo-1601737487795-dab272f52420?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 87,
+      "title": "FireCuda 530 2TB",
+      "brand": "Seagate",
+      "price": 19999,
+      "category": "storage",
+      "rating": 4.7,
+      "stock": 20,
+      "tags": [
+        "storage",
+        "ssd",
+        "ps5"
+      ],
+      "description": "FireCuda 530 2TB provides blazing-fast speeds and dependable storage for your files, games, and projects. Trusted Seagate technology for expanding your digital workspace.",
+      "specs": {
+        "capacity": "2TB",
+        "interface": "NVMe/USB 3.2",
+        "read_speed": "7000 MB/s",
+        "form_factor": "M.2/Portable",
+        "warranty": "5 Years",
+        "model_number": "SEA-087",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200",
+        "https://images.unsplash.com/photo-1611174743420-3d7df880ce32?q=80&w=1200",
+        "https://images.unsplash.com/photo-1580894908361-967195033215?q=80&w=1200",
+        "https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 88,
+      "title": "KC3000 2TB",
+      "brand": "Kingston",
+      "price": 15999,
+      "category": "storage",
+      "rating": 4.6,
+      "stock": 11,
+      "tags": [
+        "storage",
+        "ssd",
+        "value"
+      ],
+      "description": "KC3000 2TB provides blazing-fast speeds and dependable storage for your files, games, and projects. Trusted Kingston technology for expanding your digital workspace.",
+      "specs": {
+        "capacity": "2TB",
+        "interface": "NVMe/USB 3.2",
+        "read_speed": "7000 MB/s",
+        "form_factor": "M.2/Portable",
+        "warranty": "5 Years",
+        "model_number": "KIN-088",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=1200",
+        "https://images.unsplash.com/photo-1531492746076-161ca9bc6b53?q=80&w=1200",
+        "https://images.unsplash.com/photo-1601737487795-dab272f52420?q=80&w=1200",
+        "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 89,
+      "title": "Rocket 4 Plus 4TB",
+      "brand": "Sabrent",
+      "price": 34999,
+      "category": "storage",
+      "rating": 4.7,
+      "stock": 63,
+      "tags": [
+        "storage",
+        "ssd",
+        "high-capacity"
+      ],
+      "description": "Rocket 4 Plus 4TB provides blazing-fast speeds and dependable storage for your files, games, and projects. Trusted Sabrent technology for expanding your digital workspace.",
+      "specs": {
+        "capacity": "2TB",
+        "interface": "NVMe/USB 3.2",
+        "read_speed": "7000 MB/s",
+        "form_factor": "M.2/Portable",
+        "warranty": "5 Years",
+        "model_number": "SAB-089",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1611174743420-3d7df880ce32?q=80&w=1200",
+        "https://images.unsplash.com/photo-1580894908361-967195033215?q=80&w=1200",
+        "https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=1200",
+        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 90,
+      "title": "Rugged SSD Pro5 2TB",
+      "brand": "LaCie",
+      "price": 42999,
+      "category": "storage",
+      "rating": 4.6,
+      "stock": 13,
+      "tags": [
+        "storage",
+        "portable",
+        "creator"
+      ],
+      "description": "Rugged SSD Pro5 2TB provides blazing-fast speeds and dependable storage for your files, games, and projects. Trusted LaCie technology for expanding your digital workspace.",
+      "specs": {
+        "capacity": "2TB",
+        "interface": "NVMe/USB 3.2",
+        "read_speed": "7000 MB/s",
+        "form_factor": "M.2/Portable",
+        "warranty": "5 Years",
+        "model_number": "LAC-090",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1531492746076-161ca9bc6b53?q=80&w=1200",
+        "https://images.unsplash.com/photo-1601737487795-dab272f52420?q=80&w=1200",
+        "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 91,
+      "title": "ArmorATD 4TB",
+      "brand": "G-Technology",
+      "price": 14999,
+      "category": "storage",
+      "rating": 4.4,
+      "stock": 65,
+      "tags": [
+        "storage",
+        "hdd",
+        "rugged"
+      ],
+      "description": "ArmorATD 4TB provides blazing-fast speeds and dependable storage for your files, games, and projects. Trusted G-Technology technology for expanding your digital workspace.",
+      "specs": {
+        "capacity": "2TB",
+        "interface": "NVMe/USB 3.2",
+        "read_speed": "7000 MB/s",
+        "form_factor": "M.2/Portable",
+        "warranty": "5 Years",
+        "model_number": "G-T-091",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1580894908361-967195033215?q=80&w=1200",
+        "https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=1200",
+        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200",
+        "https://images.unsplash.com/photo-1611174743420-3d7df880ce32?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 92,
+      "title": "DS923+ NAS",
+      "brand": "Synology",
+      "price": 64999,
+      "category": "storage",
+      "rating": 4.8,
+      "stock": 50,
+      "tags": [
+        "storage",
+        "nas",
+        "network"
+      ],
+      "description": "DS923+ NAS provides blazing-fast speeds and dependable storage for your files, games, and projects. Trusted Synology technology for expanding your digital workspace.",
+      "specs": {
+        "capacity": "2TB",
+        "interface": "NVMe/USB 3.2",
+        "read_speed": "7000 MB/s",
+        "form_factor": "M.2/Portable",
+        "warranty": "5 Years",
+        "model_number": "SYN-092",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1601737487795-dab272f52420?q=80&w=1200",
+        "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=1200",
+        "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=1200",
+        "https://images.unsplash.com/photo-1531492746076-161ca9bc6b53?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 93,
+      "title": "TS-464 NAS",
+      "brand": "QNAP",
+      "price": 54990,
+      "category": "storage",
+      "rating": 4.6,
+      "stock": 56,
+      "tags": [
+        "storage",
+        "nas",
+        "home-server"
+      ],
+      "description": "TS-464 NAS provides blazing-fast speeds and dependable storage for your files, games, and projects. Trusted QNAP technology for expanding your digital workspace.",
+      "specs": {
+        "capacity": "2TB",
+        "interface": "NVMe/USB 3.2",
+        "read_speed": "7000 MB/s",
+        "form_factor": "M.2/Portable",
+        "warranty": "5 Years",
+        "model_number": "QNA-093",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=1200",
+        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200",
+        "https://images.unsplash.com/photo-1611174743420-3d7df880ce32?q=80&w=1200",
+        "https://images.unsplash.com/photo-1580894908361-967195033215?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 94,
+      "title": "NM790 2TB",
+      "brand": "Lexar",
+      "price": 13999,
+      "category": "storage",
+      "rating": 4.5,
+      "stock": 83,
+      "tags": [
+        "storage",
+        "ssd",
+        "budget"
+      ],
+      "description": "NM790 2TB provides blazing-fast speeds and dependable storage for your files, games, and projects. Trusted Lexar technology for expanding your digital workspace.",
+      "specs": {
+        "capacity": "2TB",
+        "interface": "NVMe/USB 3.2",
+        "read_speed": "7000 MB/s",
+        "form_factor": "M.2/Portable",
+        "warranty": "5 Years",
+        "model_number": "LEX-094",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=1200",
+        "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=1200",
+        "https://images.unsplash.com/photo-1531492746076-161ca9bc6b53?q=80&w=1200",
+        "https://images.unsplash.com/photo-1601737487795-dab272f52420?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 95,
+      "title": "T-Force Cardea Z540 2TB",
+      "brand": "TeamGroup",
+      "price": 22999,
+      "category": "storage",
+      "rating": 4.6,
+      "stock": 61,
+      "tags": [
+        "storage",
+        "ssd",
+        "gen5"
+      ],
+      "description": "T-Force Cardea Z540 2TB provides blazing-fast speeds and dependable storage for your files, games, and projects. Trusted TeamGroup technology for expanding your digital workspace.",
+      "specs": {
+        "capacity": "2TB",
+        "interface": "NVMe/USB 3.2",
+        "read_speed": "7000 MB/s",
+        "form_factor": "M.2/Portable",
+        "warranty": "5 Years",
+        "model_number": "TEA-095",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200",
+        "https://images.unsplash.com/photo-1611174743420-3d7df880ce32?q=80&w=1200",
+        "https://images.unsplash.com/photo-1580894908361-967195033215?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 96,
+      "title": "MP700 2TB",
+      "brand": "Corsair",
+      "price": 21499,
+      "category": "storage",
+      "rating": 4.7,
+      "stock": 55,
+      "tags": [
+        "storage",
+        "ssd",
+        "gaming"
+      ],
+      "description": "MP700 2TB provides blazing-fast speeds and dependable storage for your files, games, and projects. Trusted Corsair technology for expanding your digital workspace.",
+      "specs": {
+        "capacity": "2TB",
+        "interface": "NVMe/USB 3.2",
+        "read_speed": "7000 MB/s",
+        "form_factor": "M.2/Portable",
+        "warranty": "5 Years",
+        "model_number": "COR-096",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=1200",
+        "https://images.unsplash.com/photo-1531492746076-161ca9bc6b53?q=80&w=1200",
+        "https://images.unsplash.com/photo-1601737487795-dab272f52420?q=80&w=1200",
+        "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 97,
+      "title": "Legend 960 Max 2TB",
+      "brand": "ADATA",
+      "price": 16990,
+      "category": "storage",
+      "rating": 4.5,
+      "stock": 42,
+      "tags": [
+        "storage",
+        "ssd",
+        "heatsink"
+      ],
+      "description": "Legend 960 Max 2TB provides blazing-fast speeds and dependable storage for your files, games, and projects. Trusted ADATA technology for expanding your digital workspace.",
+      "specs": {
+        "capacity": "2TB",
+        "interface": "NVMe/USB 3.2",
+        "read_speed": "7000 MB/s",
+        "form_factor": "M.2/Portable",
+        "warranty": "5 Years",
+        "model_number": "ADA-097",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1611174743420-3d7df880ce32?q=80&w=1200",
+        "https://images.unsplash.com/photo-1580894908361-967195033215?q=80&w=1200",
+        "https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=1200",
+        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 98,
+      "title": "Extreme PRO SD 512GB",
+      "brand": "SanDisk",
+      "price": 8999,
+      "category": "storage",
+      "rating": 4.7,
+      "stock": 27,
+      "tags": [
+        "storage",
+        "sd-card",
+        "camera"
+      ],
+      "description": "Extreme PRO SD 512GB provides blazing-fast speeds and dependable storage for your files, games, and projects. Trusted SanDisk technology for expanding your digital workspace.",
+      "specs": {
+        "capacity": "2TB",
+        "interface": "NVMe/USB 3.2",
+        "read_speed": "7000 MB/s",
+        "form_factor": "M.2/Portable",
+        "warranty": "5 Years",
+        "model_number": "SAN-098",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1531492746076-161ca9bc6b53?q=80&w=1200",
+        "https://images.unsplash.com/photo-1601737487795-dab272f52420?q=80&w=1200",
+        "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=1200",
+        "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 99,
+      "title": "PRO Ultimate microSD 1TB",
+      "brand": "Samsung",
+      "price": 12999,
+      "category": "storage",
+      "rating": 4.6,
+      "stock": 62,
+      "tags": [
+        "storage",
+        "microsd",
+        "mobile"
+      ],
+      "description": "PRO Ultimate microSD 1TB provides blazing-fast speeds and dependable storage for your files, games, and projects. Trusted Samsung technology for expanding your digital workspace.",
+      "specs": {
+        "capacity": "2TB",
+        "interface": "NVMe/USB 3.2",
+        "read_speed": "7000 MB/s",
+        "form_factor": "M.2/Portable",
+        "warranty": "5 Years",
+        "model_number": "SAM-099",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1580894908361-967195033215?q=80&w=1200",
+        "https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=1200",
+        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200",
+        "https://images.unsplash.com/photo-1611174743420-3d7df880ce32?q=80&w=1200"
+      ]
+    },
+    {
+      "id": 100,
+      "title": "Envoy Pro FX 2TB",
+      "brand": "OWC",
+      "price": 28999,
+      "category": "storage",
+      "rating": 4.6,
+      "stock": 48,
+      "tags": [
+        "storage",
+        "portable",
+        "thunderbolt"
+      ],
+      "description": "Envoy Pro FX 2TB provides blazing-fast speeds and dependable storage for your files, games, and projects. Trusted OWC technology for expanding your digital workspace.",
+      "specs": {
+        "capacity": "2TB",
+        "interface": "NVMe/USB 3.2",
+        "read_speed": "7000 MB/s",
+        "form_factor": "M.2/Portable",
+        "warranty": "5 Years",
+        "model_number": "OWC-100",
+        "release_year": "2025"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1601737487795-dab272f52420?q=80&w=1200",
+        "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=1200",
+        "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=1200"
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Demo User",
+      "email": "demo@novacart.com",
+      "password": "fac7366a8f9e849681981beae79d90c63c35ca8fe8ad599a3dcddadf63049947",
+      "role": "user",
+      "createdAt": "2025-06-01T10:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "name": "Jayash Nikam",
+      "email": "jay@novacart.com",
+      "password": "8ce74385e83e14a17a5d7611a39f31f5c7002b83ec871042d70db63d0df5176c",
+      "role": "user",
+      "createdAt": "2026-06-25T16:48:39.866Z"
+    },
+    {
+      "id": 3,
+      "name": "Store Admin",
+      "email": "admin@novacart.com",
+      "password": "47c80fa61d322778d1ac8d5f0314ffe1cd22c7d3582534e387486c1af2ff44aa",
+      "role": "admin",
+      "createdAt": "2025-06-01T10:00:00.000Z"
+    },
+    {
+      "name": "Jay",
+      "email": "njayash6727@gmail.com",
+      "password": "8ce74385e83e14a17a5d7611a39f31f5c7002b83ec871042d70db63d0df5176c",
+      "role": "user",
+      "createdAt": "2026-06-26T09:54:14.772Z",
+      "id": 4
+    }
+  ],
+  "addresses": [
+    {
+      "id": 1,
+      "userId": 1,
+      "label": "Home",
+      "name": "Demo User",
+      "line1": "42 Tech Park, Koramangala",
+      "line2": "Block B, Apt 301",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "pincode": "560034",
+      "phone": "+91 9876543210",
+      "isDefault": true
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "label": "Office",
+      "name": "Demo User",
+      "line1": "91 Springboard, Residency Road",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "pincode": "560025",
+      "phone": "+91 9876543210",
+      "isDefault": false
+    },
+    {
+      "label": "Home",
+      "name": "Jay",
+      "line1": "Karvenagar",
+      "line2": "",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "pincode": "411058",
+      "phone": "8798654345",
+      "isDefault": true,
+      "userId": 4,
+      "id": 3
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "title": "MacBook Pro 14\" M4 Pro",
+          "price": 219900,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=1200"
+        }
+      ],
+      "total": 219900,
+      "status": "delivered",
+      "createdAt": "2025-05-10T14:30:00.000Z",
+      "shippingAddress": {
+        "name": "Demo User",
+        "line1": "42 Tech Park, Koramangala",
+        "line2": "Block B, Apt 301",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "pincode": "560034",
+        "phone": "+91 9876543210"
+      }
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "items": [
+        {
+          "productId": 41,
+          "title": "Sony WH-1000XM5",
+          "price": 29990,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1200"
+        },
+        {
+          "productId": 61,
+          "title": "Logitech MX Master 3S",
+          "price": 9995,
+          "quantity": 2,
+          "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?q=80&w=1200"
+        }
+      ],
+      "total": 49980,
+      "status": "shipped",
+      "createdAt": "2025-06-15T09:00:00.000Z",
+      "shippingAddress": {
+        "name": "Demo User",
+        "line1": "91 Springboard, Residency Road",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "pincode": "560025",
+        "phone": "+91 9876543210"
+      }
+    },
+    {
+      "userId": 4,
+      "items": [
+        {
+          "productId": 1,
+          "title": "MacBook Pro 14\" M4 Pro",
+          "price": 219900,
+          "quantity": 2,
+          "image": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=1200"
+        },
+        {
+          "productId": 2,
+          "title": "MacBook Air 15\" M3",
+          "price": 134900,
+          "quantity": 2,
+          "image": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=1200"
+        },
+        {
+          "productId": 3,
+          "title": "XPS 15 9530",
+          "price": 164999,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200"
+        }
+      ],
+      "total": 874599,
+      "status": "processing",
+      "createdAt": "2026-06-26T09:56:17.151Z",
+      "shippingAddress": {
+        "name": "Jay",
+        "line1": "Karvenagar",
+        "line2": "",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "pincode": "411058",
+        "phone": "8798654345"
+      },
+      "id": 3
+    }
+  ],
+  "otps": []
+}

@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/theme";
+@import "base/reset";
+@import "base/scrollbar";
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/page";
+
+@import "components/buttons";
+@import "components/cards";
+@import "components/glass";
+@import "components/skeleton";
+@import "components/forms";
+@import "components/form-validation";
+@import "components/search";
+@import "components/otp";
+
+@import "utilities/gradient";
+@import "utilities/animations";
+@import "utilities/accessibility";
