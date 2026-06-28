@@ -1,5 +1,11 @@
 import { createHash } from 'crypto'
-import type { OtpPurpose, OtpRecord, RegisterOtpPayload } from '@/types/otp'
+import type {
+  OtpPurpose,
+  OtpRecord,
+  RegisterOtpPayload,
+  PhoneLoginOtpPayload,
+} from '@/types/otp'
+import { normalizePhone } from '@/lib/phone'
 
 const BASE_URL = process.env.NEXT_PUBLIC_API_URL
 
@@ -46,6 +52,22 @@ export async function findOtp(
   )[0] ?? null
 }
 
+export async function findOtpByPhone(
+  phone: string,
+  purpose: OtpPurpose,
+): Promise<OtpRecord | null> {
+  const normalized = normalizePhone(phone)
+  const res = await fetch(
+    `${BASE_URL}/otps?phone=${encodeURIComponent(normalized)}&purpose=${purpose}`,
+    { cache: 'no-store' },
+  )
+  if (!res.ok) return null
+  const records: OtpRecord[] = await res.json()
+  return records.sort(
+    (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime(),
+  )[0] ?? null
+}
+
 export async function deleteOtp(id: number): Promise<void> {
   await fetch(`${BASE_URL}/otps/${id}`, { method: 'DELETE' })
 }
@@ -56,6 +78,20 @@ export async function deleteOtpsForEmail(
 ): Promise<void> {
   const res = await fetch(
     `${BASE_URL}/otps?email=${encodeURIComponent(email.toLowerCase())}&purpose=${purpose}`,
+    { cache: 'no-store' },
+  )
+  if (!res.ok) return
+  const records: OtpRecord[] = await res.json()
+  await Promise.all(records.map((r) => deleteOtp(r.id)))
+}
+
+export async function deleteOtpsForPhone(
+  phone: string,
+  purpose: OtpPurpose,
+): Promise<void> {
+  const normalized = normalizePhone(phone)
+  const res = await fetch(
+    `${BASE_URL}/otps?phone=${encodeURIComponent(normalized)}&purpose=${purpose}`,
     { cache: 'no-store' },
   )
   if (!res.ok) return
@@ -77,6 +113,39 @@ export async function createOtp(
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       email: normalized,
+      phone: null,
+      codeHash: hashOtp(code),
+      purpose,
+      payload: payload ?? null,
+      expiresAt: expiryDate(),
+      attempts: 0,
+      createdAt: new Date().toISOString(),
+    }),
+  })
+
+  if (!res.ok) {
+    throw new Error('Failed to create OTP')
+  }
+
+  const record: OtpRecord = await res.json()
+  return { record, code }
+}
+
+export async function createPhoneOtp(
+  phone: string,
+  purpose: OtpPurpose,
+  payload?: PhoneLoginOtpPayload,
+): Promise<{ record: OtpRecord; code: string }> {
+  const normalized = normalizePhone(phone)
+  await deleteOtpsForPhone(normalized, purpose)
+
+  const code = generateOtpCode()
+  const res = await fetch(`${BASE_URL}/otps`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      email: '',
+      phone: normalized,
       codeHash: hashOtp(code),
       purpose,
       payload: payload ?? null,
@@ -98,20 +167,25 @@ export type OtpVerifyResult =
   | { ok: true; record: OtpRecord }
   | { ok: false; error: string; status: number }
 
-export async function verifyOtp(
-  email: string,
-  purpose: OtpPurpose,
+async function verifyOtpRecord(
+  record: OtpRecord | null,
   code: string,
 ): Promise<OtpVerifyResult> {
-  const record = await findOtp(email, purpose)
-
   if (!record) {
-    return { ok: false, error: 'No verification code found. Request a new one.', status: 400 }
+    return {
+      ok: false,
+      error: 'No verification code found. Request a new one.',
+      status: 400,
+    }
   }
 
   if (isOtpExpired(record)) {
     await deleteOtp(record.id)
-    return { ok: false, error: 'Verification code has expired. Request a new one.', status: 400 }
+    return {
+      ok: false,
+      error: 'Verification code has expired. Request a new one.',
+      status: 400,
+    }
   }
 
   if (record.attempts >= MAX_ATTEMPTS) {
@@ -133,6 +207,24 @@ export async function verifyOtp(
   }
 
   return { ok: true, record }
+}
+
+export async function verifyOtp(
+  email: string,
+  purpose: OtpPurpose,
+  code: string,
+): Promise<OtpVerifyResult> {
+  const record = await findOtp(email, purpose)
+  return verifyOtpRecord(record, code)
+}
+
+export async function verifyPhoneOtp(
+  phone: string,
+  purpose: OtpPurpose,
+  code: string,
+): Promise<OtpVerifyResult> {
+  const record = await findOtpByPhone(phone, purpose)
+  return verifyOtpRecord(record, code)
 }
 
 export function isDevOtpExposed(): boolean {

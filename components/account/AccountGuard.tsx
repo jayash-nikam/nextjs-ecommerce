@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { useRouter, usePathname } from 'next/navigation'
 import { useAuthStore } from '@/store/useAuthStore'
 import { Loader2 } from 'lucide-react'
@@ -15,22 +15,22 @@ export function AccountGuard({ children }: { children: React.ReactNode }) {
   const router = useRouter()
   const pathname = usePathname()
   const user = useAuthStore((s) => s.user)
-  const [mounted, setMounted] = useState(false)
+  const status = useAuthStore((s) => s.status)
 
   const isPublic = PUBLIC_PATHS.includes(pathname)
-
-  useEffect(() => setMounted(true), [])
+  const isLoading = status === 'loading'
 
   useEffect(() => {
-    if (!mounted) return
+    if (isLoading) return
+
     if (!user && !isPublic) {
       router.replace('/account/login')
     } else if (user && isPublic) {
       router.replace('/account')
     }
-  }, [mounted, user, isPublic, router])
+  }, [isLoading, user, isPublic, router])
 
-  if (!mounted) {
+  if (isLoading) {
     return (
       <div className="flex justify-center py-20">
         <Loader2 size={28} className="text-primary animate-spin" />

@@ -21,6 +21,7 @@ import {
   AdminSelect,
   OrderStatusBadge,
 } from '@/components/admin/admin-ui'
+import { getUserContact } from '@/lib/user/display'
 
 const STATUSES: OrderStatus[] = [
   'pending',
@@ -72,7 +73,8 @@ export function OrdersManager() {
       const user = userMap.get(order.userId)
       return (
         String(order.id).includes(q) ||
-        user?.email.toLowerCase().includes(q) ||
+        user?.email?.toLowerCase().includes(q) ||
+        user?.phone?.includes(q.replace(/\D/g, '')) ||
         user?.name.toLowerCase().includes(q) ||
         order.items.some((i) => i.title.toLowerCase().includes(q))
       )
@@ -193,7 +195,7 @@ export function OrdersManager() {
                     {user && (
                       <p className="text-sm text-slate-300 mt-1">
                         {user.name}{' '}
-                        <span className="text-slate-500">({user.email})</span>
+                        <span className="text-slate-500">({getUserContact(user)})</span>
                       </p>
                     )}
                   </div>

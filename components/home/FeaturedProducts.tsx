@@ -10,7 +10,7 @@ export async function FeaturedProducts() {
 
   return (
     <section className="py-14 sm:py-20 border-t border-border">
-      <div className="flex items-end justify-between mb-8 sm:mb-10">
+      <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 mb-8 sm:mb-10">
         <div>
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">
             Featured <span className="gradient-text">Products</span>
@@ -19,14 +19,14 @@ export async function FeaturedProducts() {
         </div>
         <Link
           href="/products?sort=rating_desc"
-          className="hidden sm:inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary-hover transition-colors"
+          className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary-hover transition-colors mt-3 sm:mt-0"
         >
           See all
           <ArrowRight size={16} />
         </Link>
       </div>
 
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-4 sm:gap-6 grid-cols-2 lg:grid-cols-4">
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}

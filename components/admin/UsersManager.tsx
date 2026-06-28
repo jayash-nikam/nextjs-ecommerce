@@ -16,9 +16,12 @@ import type { Order } from '@/types/order'
 import {
   AdminSearchInput,
   AdminSelect,
+  AuthProviderBadge,
   OrderStatusBadge,
   RoleBadge,
 } from '@/components/admin/admin-ui'
+import { formatPhoneDisplay } from '@/lib/phone'
+import { getUserContact } from '@/lib/user/display'
 
 export function UsersManager() {
   const token = useAdminStore((s) => s.token)
@@ -27,6 +30,7 @@ export function UsersManager() {
   const [loading, setLoading] = useState(true)
   const [search, setSearch] = useState('')
   const [roleFilter, setRoleFilter] = useState('all')
+  const [providerFilter, setProviderFilter] = useState('all')
   const [selected, setSelected] = useState<AdminUserRow | null>(null)
   const [addresses, setAddresses] = useState<Address[]>([])
   const [userOrders, setUserOrders] = useState<Order[]>([])
@@ -85,13 +89,15 @@ export function UsersManager() {
     const q = search.trim().toLowerCase()
     return users.filter((u) => {
       if (roleFilter !== 'all' && u.role !== roleFilter) return false
+      if (providerFilter !== 'all' && u.authProvider !== providerFilter) return false
       if (!q) return true
       return (
         u.name.toLowerCase().includes(q) ||
-        u.email.toLowerCase().includes(q)
+        (u.email?.toLowerCase().includes(q) ?? false) ||
+        (u.phone?.includes(q.replace(/\D/g, '')) ?? false)
       )
     })
-  }, [users, search, roleFilter])
+  }, [users, search, roleFilter, providerFilter])
 
   const totalCustomers = users.filter((u) => u.role === 'user').length
   const totalSpent = users.reduce((sum, u) => sum + u.totalSpent, 0)
@@ -129,6 +135,16 @@ export function UsersManager() {
             { value: 'admin', label: 'Admins' },
           ]}
         />
+        <AdminSelect
+          value={providerFilter}
+          onChange={setProviderFilter}
+          options={[
+            { value: 'all', label: 'All sign-in methods' },
+            { value: 'email', label: 'Email' },
+            { value: 'google', label: 'Google' },
+            { value: 'phone', label: 'Mobile OTP' },
+          ]}
+        />
       </div>
 
       <div className="bg-slate-800/50 border border-white/10 rounded-2xl overflow-hidden responsive-scroll">
@@ -137,6 +153,7 @@ export function UsersManager() {
             <tr className="border-b border-white/10 text-slate-400 text-left">
               <th className="px-4 py-3 font-medium">Customer</th>
               <th className="px-4 py-3 font-medium hidden md:table-cell">Joined</th>
+              <th className="px-4 py-3 font-medium hidden lg:table-cell">Sign-in</th>
               <th className="px-4 py-3 font-medium">Orders</th>
               <th className="px-4 py-3 font-medium hidden sm:table-cell">Spent</th>
               <th className="px-4 py-3 font-medium">Role</th>
@@ -158,7 +175,12 @@ export function UsersManager() {
                     <p className="font-medium text-white group-hover:text-indigo-300 transition-colors">
                       {u.name}
                     </p>
-                    <p className="text-xs text-slate-500">{u.email}</p>
+                    <p className="text-xs text-slate-500">{getUserContact(u)}</p>
+                    {u.phone && u.email && (
+                      <p className="text-[10px] text-slate-600">
+                        {formatPhoneDisplay(u.phone)}
+                      </p>
+                    )}
                   </button>
                 </td>
                 <td className="px-4 py-3 text-slate-400 hidden md:table-cell">
@@ -167,6 +189,9 @@ export function UsersManager() {
                     month: 'short',
                     year: 'numeric',
                   })}
+                </td>
+                <td className="px-4 py-3 hidden lg:table-cell">
+                  <AuthProviderBadge provider={u.authProvider} />
                 </td>
                 <td className="px-4 py-3 text-slate-300">{u.orderCount}</td>
                 <td className="px-4 py-3 text-slate-300 hidden sm:table-cell">
@@ -209,7 +234,10 @@ export function UsersManager() {
             <div className="sticky top-0 z-10 flex items-center justify-between p-5 border-b border-white/10 bg-slate-900/95 backdrop-blur">
               <div>
                 <h3 className="font-semibold text-white">{selected.name}</h3>
-                <p className="text-xs text-slate-500">{selected.email}</p>
+                <p className="text-xs text-slate-500">{getUserContact(selected)}</p>
+                <div className="mt-2">
+                  <AuthProviderBadge provider={selected.authProvider} />
+                </div>
               </div>
               <button
                 type="button"
@@ -260,6 +288,13 @@ export function UsersManager() {
 
               <div>
                 <p className="text-xs text-slate-500">
+                  Email: {selected.email || '—'}
+                </p>
+                <p className="text-xs text-slate-500 mt-1">
+                  Mobile:{' '}
+                  {selected.phone ? formatPhoneDisplay(selected.phone) : '—'}
+                </p>
+                <p className="text-xs text-slate-500 mt-2">
                   Joined{' '}
                   {new Date(selected.createdAt).toLocaleDateString('en-IN', {
                     dateStyle: 'long',

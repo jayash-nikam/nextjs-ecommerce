@@ -1,4 +1,5 @@
 import type { OrderStatus } from '@/types/order'
+import type { AuthProvider } from '@/types/user'
 
 export interface AdminRecentOrder {
   id: number
@@ -50,9 +51,12 @@ export interface AdminDashboardStats {
 
 export interface AdminUserRow {
   id: number
-  email: string
+  email: string | null
+  phone: string | null
   name: string
   role: 'admin' | 'user'
+  authProvider: AuthProvider
+  avatarUrl: string | null
   createdAt: string
   orderCount: number
   totalSpent: number

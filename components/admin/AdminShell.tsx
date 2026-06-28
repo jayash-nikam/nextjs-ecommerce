@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { getUserContact } from '@/lib/user/display'
 import { usePathname, useRouter } from 'next/navigation'
 import {
   LayoutDashboard,
@@ -89,7 +90,7 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
 
       <div className="p-4 border-t border-white/10">
         {user && (
-          <p className="text-xs text-slate-500 mb-3 truncate">{user.email}</p>
+          <p className="text-xs text-slate-500 mb-3 truncate">{getUserContact(user)}</p>
         )}
         <button
           onClick={handleLogout}

@@ -33,6 +33,31 @@ export function RoleBadge({ role }: { role: 'admin' | 'user' }) {
   )
 }
 
+const AUTH_PROVIDER_STYLES = {
+  email: 'bg-slate-700/80 text-slate-300',
+  google: 'bg-blue-500/15 text-blue-300 border border-blue-500/20',
+  phone: 'bg-emerald-500/15 text-emerald-300 border border-emerald-500/20',
+} as const
+
+export function AuthProviderBadge({
+  provider,
+}: {
+  provider: 'email' | 'google' | 'phone'
+}) {
+  const labels = {
+    email: 'Email',
+    google: 'Google',
+    phone: 'Mobile OTP',
+  }
+  return (
+    <span
+      className={`text-[10px] font-semibold px-2 py-0.5 rounded-full uppercase tracking-wide ${AUTH_PROVIDER_STYLES[provider]}`}
+    >
+      {labels[provider]}
+    </span>
+  )
+}
+
 export function AdminPanel({
   title,
   children,

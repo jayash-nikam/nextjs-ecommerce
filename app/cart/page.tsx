@@ -5,14 +5,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Minus, Plus, ShoppingBag, Trash2 } from 'lucide-react'
 import { useCartStore, getCartTotal, getCartCount } from '@/store/useCartStore'
-import { useAuthStore, authHeaders } from '@/store/useAuthStore'
+import { useAuthStore, authFetch } from '@/store/useAuthStore'
 
 export default function CartPage() {
   const items = useCartStore((state) => state.items)
   const updateQuantity = useCartStore((state) => state.updateQuantity)
   const removeFromCart = useCartStore((state) => state.removeFromCart)
   const clearCart = useCartStore((state) => state.clearCart)
-  const token = useAuthStore((state) => state.token)
   const user = useAuthStore((state) => state.user)
   const [mounted, setMounted] = useState(false)
   const [checkingOut, setCheckingOut] = useState(false)
@@ -24,7 +23,7 @@ export default function CartPage() {
   const count = getCartCount(items)
 
   async function handleCheckout() {
-    if (!token || !user) {
+    if (!user) {
       window.location.href = '/account/login'
       return
     }
@@ -33,9 +32,7 @@ export default function CartPage() {
     setCheckoutMsg('')
 
     try {
-      const addrRes = await fetch('/api/addresses', {
-        headers: authHeaders(token),
-      })
+      const addrRes = await authFetch('/api/addresses')
       const addresses = await addrRes.json()
       const defaultAddr =
         addresses.find((a: { isDefault: boolean }) => a.isDefault) ||
@@ -47,9 +44,8 @@ export default function CartPage() {
         return
       }
 
-      const orderRes = await fetch('/api/orders', {
+      const orderRes = await authFetch('/api/orders', {
         method: 'POST',
-        headers: authHeaders(token),
         body: JSON.stringify({
           items: items.map((i) => ({
             productId: i.id,

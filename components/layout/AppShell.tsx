@@ -4,6 +4,8 @@ import { Suspense } from 'react'
 import { usePathname } from 'next/navigation'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
+import { ChatWidget } from '@/components/chat/ChatWidget'
+import { AuthProvider } from '@/components/auth/AuthProvider'
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
@@ -14,7 +16,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   }
 
   return (
-    <>
+    <AuthProvider>
       <a href="#main-content" className="skip-link">
         Skip to main content
       </a>
@@ -25,6 +27,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         {children}
       </main>
       <Footer />
-    </>
+      <ChatWidget />
+    </AuthProvider>
   )
 }

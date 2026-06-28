@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next'
+import { CMS_PAGES } from '@/lib/cms/content'
 import { PRODUCT_CATEGORIES } from '@/lib/constants'
 import { SITE_URL } from '@/lib/seo'
 
@@ -6,11 +7,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
     '',
     '/products',
-    '/about',
-    '/contact',
-    '/privacy',
-    '/terms',
     '/cart',
+    ...CMS_PAGES.map((p) => p.href),
   ]
 
   const categoryRoutes = PRODUCT_CATEGORIES.map(

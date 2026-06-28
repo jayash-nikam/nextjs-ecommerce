@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { authenticateUser, createSessionToken } from '@/lib/auth/users'
+import { authenticateUser } from '@/lib/auth/users'
+import { jsonWithSession } from '@/lib/auth/issueSession'
 
 export async function POST(request: NextRequest) {
   try {
@@ -20,8 +21,7 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    const token = createSessionToken(user.id)
-    return NextResponse.json({ user, token })
+    return jsonWithSession(user)
   } catch {
     return NextResponse.json({ error: 'Login failed' }, { status: 500 })
   }

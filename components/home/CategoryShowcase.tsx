@@ -19,7 +19,7 @@ const categoryImages: Record<ProductCategory, string> = {
 export function CategoryShowcase() {
   return (
     <section className="py-14 sm:py-20">
-      <div className="flex items-end justify-between mb-8 sm:mb-10">
+      <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 mb-8 sm:mb-10">
         <div>
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">
             Shop by <span className="gradient-text">Category</span>
@@ -30,7 +30,7 @@ export function CategoryShowcase() {
         </div>
         <Link
           href="/products"
-          className="hidden sm:inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary-hover transition-colors"
+          className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary-hover transition-colors"
         >
           View all
           <ArrowRight size={16} />

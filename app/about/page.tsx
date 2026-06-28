@@ -1,31 +1,31 @@
-import { StaticPageLayout } from '@/components/layout/StaticPageLayout'
-import { BRAND_NAME, BRAND_TAGLINE } from '@/lib/brand'
 import type { Metadata } from 'next'
+import { StaticPageLayout } from '@/components/layout/StaticPageLayout'
+import { CmsSections } from '@/components/cms/CmsSections'
+import {
+  aboutDescription,
+  aboutIntro,
+  aboutSections,
+  CMS_PAGES,
+} from '@/lib/cms/content'
+import { BRAND_NAME } from '@/lib/brand'
+
+const meta = CMS_PAGES.find((p) => p.slug === 'about')!
 
 export const metadata: Metadata = {
-  title: 'About',
-  description: `Learn about ${BRAND_NAME} and our mission.`,
+  title: meta.title,
+  description: meta.description,
 }
 
 export default function AboutPage() {
   return (
     <StaticPageLayout
       title={`About ${BRAND_NAME}`}
-      description={BRAND_TAGLINE}
+      description={aboutDescription}
     >
-      <p>
-        {BRAND_NAME} is a modern online tech store built to help you discover
-        premium technology products — from laptops and monitors to audio gear
-        and accessories.
-      </p>
-      <p>
-        We combine a curated catalog of 100+ products with smart search and
-        filtering so you can find exactly what you need, faster.
-      </p>
-      <p>
-        Our mission is to make tech shopping simple, transparent, and enjoyable
-        for everyone.
-      </p>
+      {aboutIntro.map((p) => (
+        <p key={p.slice(0, 24)}>{p}</p>
+      ))}
+      <CmsSections sections={aboutSections} />
     </StaticPageLayout>
   )
 }

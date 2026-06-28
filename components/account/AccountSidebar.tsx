@@ -9,10 +9,13 @@ import {
   MapPin,
   LogOut,
   User,
+  UserCircle,
 } from 'lucide-react'
+import { getUserContact } from '@/lib/user/display'
 
 const links = [
   { href: '/account', label: 'Overview', icon: LayoutDashboard, exact: true },
+  { href: '/account/profile', label: 'Profile', icon: UserCircle },
   { href: '/account/orders', label: 'Orders', icon: Package },
   { href: '/account/addresses', label: 'Addresses', icon: MapPin },
 ]
@@ -27,12 +30,17 @@ export function AccountSidebar() {
   return (
     <aside className="card-surface p-5 h-fit lg:sticky lg:top-24 space-y-6">
       <div className="flex items-center gap-3 pb-4 border-b border-border">
-        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold">
-          {user.name.charAt(0).toUpperCase()}
+        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold overflow-hidden shrink-0">
+          {user.avatarUrl ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={user.avatarUrl} alt="" className="w-full h-full object-cover" />
+          ) : (
+            user.name.charAt(0).toUpperCase()
+          )}
         </div>
         <div className="min-w-0">
           <p className="font-semibold truncate">{user.name}</p>
-          <p className="text-xs text-muted truncate">{user.email}</p>
+          <p className="text-xs text-muted truncate">{getUserContact(user)}</p>
         </div>
       </div>
 
@@ -60,7 +68,7 @@ export function AccountSidebar() {
       </nav>
 
       <button
-        onClick={logout}
+        onClick={() => void logout()}
         className="flex items-center gap-3 w-full px-3 py-2.5 rounded-xl text-sm font-medium text-muted hover:bg-red-50 hover:text-red-600 transition-colors"
       >
         <LogOut size={18} />

@@ -262,7 +262,7 @@ export function FiltersSidebar() {
             <h3 className="text-xs font-semibold uppercase tracking-wider text-muted">
               Brand
             </h3>
-            <div className="space-y-1 max-h-48 overflow-y-auto pr-1">
+            <div className="space-y-1 lg:max-h-48 lg:overflow-y-auto pr-1">
               {meta.brands.slice(0, 15).map((brand) => (
                 <button
                   key={brand.value}
