@@ -10,6 +10,10 @@ const PURPOSE_COPY: Record<OtpPurpose, { subject: string; intro: string }> = {
     subject: `Reset your ${BRAND_NAME} password`,
     intro: 'Use this code to reset your password:',
   },
+  phone_login: {
+    subject: `Sign in to ${BRAND_NAME}`,
+    intro: 'Use this code to sign in:',
+  },
 }
 
 export async function sendOtpEmail(

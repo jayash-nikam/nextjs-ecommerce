@@ -1,9 +1,9 @@
 import { Truck, Shield, RotateCcw, CreditCard } from 'lucide-react'
 
 const items = [
-  { icon: Truck, title: 'Free Delivery', desc: 'On orders ₹50,000+' },
+  { icon: Truck, title: 'Free Delivery', desc: 'On all orders' },
   { icon: Shield, title: 'Official Warranty', desc: 'Manufacturer backed' },
-  { icon: RotateCcw, title: '7-Day Returns', desc: 'Hassle-free policy' },
+  { icon: RotateCcw, title: '30-Day Returns', desc: 'Hassle-free policy' },
   { icon: CreditCard, title: 'Secure Checkout', desc: 'Encrypted payments' },
 ]
 
@@ -19,8 +19,8 @@ export function ProductTrustBar() {
             <Icon size={18} className="text-primary" />
           </div>
           <div>
-            <p className="text-xs font-bold">{title}</p>
-            <p className="text-[10px] text-muted mt-0.5">{desc}</p>
+            <p className="text-xs sm:text-sm font-bold">{title}</p>
+            <p className="text-[0.6875rem] sm:text-xs text-muted mt-0.5">{desc}</p>
           </div>
         </div>
       ))}

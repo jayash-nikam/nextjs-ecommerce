@@ -1,31 +1,41 @@
-import { StaticPageLayout } from '@/components/layout/StaticPageLayout'
-import { BRAND_NAME, PRIVACY_EMAIL } from '@/lib/brand'
 import type { Metadata } from 'next'
+import { StaticPageLayout } from '@/components/layout/StaticPageLayout'
+import { CmsSections } from '@/components/cms/CmsSections'
+import { CmsRelatedLinks } from '@/components/cms/CmsRelatedLinks'
+import {
+  CMS_LAST_UPDATED,
+  CMS_PAGES,
+  privacySections,
+} from '@/lib/cms/content'
+import { PRIVACY_EMAIL } from '@/lib/brand'
+
+const meta = CMS_PAGES.find((p) => p.slug === 'privacy')!
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy',
-  description: `${BRAND_NAME} privacy policy.`,
+  title: meta.title,
+  description: meta.description,
 }
 
 export default function PrivacyPage() {
   return (
-    <StaticPageLayout title="Privacy Policy">
+    <StaticPageLayout
+      title="Privacy Policy"
+      description="How we collect, use, and protect your personal information."
+      lastUpdated={CMS_LAST_UPDATED}
+    >
       <p>
-        We respect your privacy. {BRAND_NAME} collects only the information needed
-        to provide our shopping experience — such as cart items stored locally
-        in your browser and anonymous usage data to improve the platform.
+        {meta.description} This policy explains what data we handle when you
+        shop, create an account, or contact support.
       </p>
+      <CmsSections sections={privacySections} />
       <p>
-        We do not sell your personal information to third parties. Payment and
-        checkout data will be handled securely when those features are enabled.
-      </p>
-      <p>
-        For questions about this policy, contact us at{' '}
+        For privacy-related requests, email{' '}
         <a href={`mailto:${PRIVACY_EMAIL}`} className="text-primary hover:underline">
           {PRIVACY_EMAIL}
         </a>
         .
       </p>
+      <CmsRelatedLinks exclude={['privacy']} />
     </StaticPageLayout>
   )
 }

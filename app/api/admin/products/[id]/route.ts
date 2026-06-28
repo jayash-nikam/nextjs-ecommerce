@@ -8,9 +8,7 @@ interface Props {
 }
 
 export async function PATCH(request: NextRequest, { params }: Props) {
-  const admin = await getAdminFromRequest(
-    request.headers.get('authorization'),
-  )
+  const admin = await getAdminFromRequest(request)
   if (!admin) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
@@ -45,9 +43,7 @@ export async function PATCH(request: NextRequest, { params }: Props) {
 }
 
 export async function DELETE(request: NextRequest, { params }: Props) {
-  const admin = await getAdminFromRequest(
-    request.headers.get('authorization'),
-  )
+  const admin = await getAdminFromRequest(request)
   if (!admin) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }

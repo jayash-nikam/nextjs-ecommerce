@@ -1,0 +1,91 @@
+.auth-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--color-muted);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+
+  &::before,
+  &::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--color-border);
+  }
+}
+
+.auth-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  border-radius: 0.875rem;
+  background: var(--color-border-subtle);
+  border: 1px solid var(--color-border);
+
+  &__btn {
+    padding: 0.625rem 0.75rem;
+    border-radius: 0.625rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-muted);
+    transition: background 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+
+    &--active {
+      background: var(--color-surface);
+      color: var(--color-foreground);
+      box-shadow: 0 1px 3px rgb(0 0 0 / 0.08);
+    }
+  }
+}
+
+.auth-social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.875rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+
+  &:hover:not(:disabled) {
+    background: var(--color-border-subtle);
+    border-color: color-mix(in srgb, var(--color-border) 70%, var(--color-primary));
+    transform: translateY(-1px);
+  }
+}
+
+.auth-method-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.625rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  background: var(--color-border-subtle);
+  color: var(--color-muted);
+
+  &--google {
+    border-color: color-mix(in srgb, #4285f4 30%, var(--color-border));
+    color: #1a73e8;
+    background: color-mix(in srgb, #4285f4 8%, var(--color-surface));
+  }
+
+  &--phone {
+    border-color: color-mix(in srgb, var(--color-primary) 30%, var(--color-border));
+    color: var(--color-primary);
+    background: var(--color-accent-soft);
+  }
+
+  &--email {
+    border-color: var(--color-border);
+  }
+}

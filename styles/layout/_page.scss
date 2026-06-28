@@ -91,11 +91,52 @@
 .filters-panel {
   height: 100%;
   background: var(--card);
+  -webkit-overflow-scrolling: touch;
 
   @include lg {
     height: auto;
     background: transparent;
   }
+}
+
+/* Mobile filter drawer — portaled to body for reliable iOS scroll */
+.filters-panel--drawer {
+  width: min(100vw, 20rem);
+  height: 100dvh;
+  max-height: 100dvh;
+  background: var(--card);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+.filters-panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.25rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.filters-panel__scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+  padding: 1rem 1.25rem;
+}
+
+.filters-panel__footer {
+  padding: 1rem 1.25rem calc(1rem + var(--safe-bottom));
+  border-top: 1px solid var(--border);
+  background: var(--card);
+}
+
+body.drawer-scroll-lock {
+  overflow: hidden;
+  height: 100%;
 }
 
 .cart-item {

@@ -30,7 +30,7 @@ type Step = 'details' | 'verify'
 
 export function RegisterForm() {
   const router = useRouter()
-  const setAuth = useAuthStore((s) => s.setAuth)
+  const setUser = useAuthStore((s) => s.setUser)
   const [step, setStep] = useState<Step>('details')
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -99,6 +99,7 @@ export function RegisterForm() {
     try {
       const res = await fetch('/api/auth/register/verify', {
         method: 'POST',
+        credentials: 'include',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, otp }),
       })
@@ -109,7 +110,7 @@ export function RegisterForm() {
         return
       }
 
-      setAuth(data.user, data.token)
+      setUser(data.user)
       router.push('/account')
     } catch {
       setServerError('Something went wrong. Please try again.')

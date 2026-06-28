@@ -103,7 +103,7 @@ export function validateSubject(value: string): string | null {
 export function validateOtp(value: string): string | null {
   const trimmed = value.trim()
   if (!trimmed) return 'Verification code is required'
-  if (!/^\d{6}$/.test(trimmed)) return 'Enter the 6-digit code from your email'
+  if (!/^\d{6}$/.test(trimmed)) return 'Enter the 6-digit verification code'
   return null
 }
 

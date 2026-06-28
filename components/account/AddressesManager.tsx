@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { Loader2, MapPin, Plus, Pencil, Trash2, Star } from 'lucide-react'
-import { useAuthStore, authHeaders } from '@/store/useAuthStore'
+import { useAuthStore, authFetch } from '@/store/useAuthStore'
 import { FormField, inputClassName } from '@/components/ui/FormField'
 import { FormAlert } from '@/components/ui/FormAlert'
 import type { Address, AddressInput } from '@/types/address'
@@ -32,7 +32,6 @@ const emptyForm: AddressInput = {
 type AddressFields = Omit<AddressInput, 'isDefault'>
 
 export function AddressesManager() {
-  const token = useAuthStore((s) => s.token)
   const user = useAuthStore((s) => s.user)
   const [addresses, setAddresses] = useState<Address[]>([])
   const [loading, setLoading] = useState(true)
@@ -44,14 +43,19 @@ export function AddressesManager() {
   const [error, setError] = useState('')
 
   function loadAddresses() {
-    return fetch('/api/addresses', { headers: authHeaders(token) })
+    return authFetch('/api/addresses')
       .then((res) => res.json())
       .then(setAddresses)
   }
 
   useEffect(() => {
+    if (!user) {
+      setLoading(false)
+      return
+    }
+
     loadAddresses().finally(() => setLoading(false))
-  }, [token])
+  }, [user])
 
   function openAdd() {
     setForm({ ...emptyForm, name: user?.name || '' })
@@ -103,9 +107,8 @@ export function AddressesManager() {
       const url = editingId ? `/api/addresses/${editingId}` : '/api/addresses'
       const method = editingId ? 'PATCH' : 'POST'
 
-      const res = await fetch(url, {
+      const res = await authFetch(url, {
         method,
-        headers: authHeaders(token),
         body: JSON.stringify(form),
       })
 
@@ -127,17 +130,15 @@ export function AddressesManager() {
 
   async function handleDelete(id: number) {
     if (!confirm('Delete this address?')) return
-    await fetch(`/api/addresses/${id}`, {
+    await authFetch(`/api/addresses/${id}`, {
       method: 'DELETE',
-      headers: authHeaders(token),
     })
     await loadAddresses()
   }
 
   async function setDefault(id: number) {
-    await fetch(`/api/addresses/${id}`, {
+    await authFetch(`/api/addresses/${id}`, {
       method: 'PATCH',
-      headers: authHeaders(token),
       body: JSON.stringify({ isDefault: true }),
     })
     await loadAddresses()

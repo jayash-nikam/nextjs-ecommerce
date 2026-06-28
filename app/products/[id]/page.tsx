@@ -64,7 +64,7 @@ export default async function ProductDetail({ params }: Props) {
   }
 
   return (
-    <div className="animate-fade-in-up page-pdp">
+    <div className="animate-fade-in-up page-pdp pb-4 sm:pb-0">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

@@ -2966,7 +2966,11 @@
       "id": 1,
       "name": "Demo User",
       "email": "demo@novacart.com",
+      "phone": null,
       "password": "fac7366a8f9e849681981beae79d90c63c35ca8fe8ad599a3dcddadf63049947",
+      "googleId": null,
+      "avatarUrl": null,
+      "authProvider": "email",
       "role": "user",
       "createdAt": "2025-06-01T10:00:00.000Z"
     },
@@ -2974,7 +2978,11 @@
       "id": 2,
       "name": "Jayash Nikam",
       "email": "jay@novacart.com",
+      "phone": null,
       "password": "8ce74385e83e14a17a5d7611a39f31f5c7002b83ec871042d70db63d0df5176c",
+      "googleId": null,
+      "avatarUrl": null,
+      "authProvider": "email",
       "role": "user",
       "createdAt": "2026-06-25T16:48:39.866Z"
     },
@@ -2982,14 +2990,22 @@
       "id": 3,
       "name": "Store Admin",
       "email": "admin@novacart.com",
+      "phone": null,
       "password": "47c80fa61d322778d1ac8d5f0314ffe1cd22c7d3582534e387486c1af2ff44aa",
+      "googleId": null,
+      "avatarUrl": null,
+      "authProvider": "email",
       "role": "admin",
       "createdAt": "2025-06-01T10:00:00.000Z"
     },
     {
       "name": "Jay",
       "email": "njayash6727@gmail.com",
+      "phone": null,
       "password": "8ce74385e83e14a17a5d7611a39f31f5c7002b83ec871042d70db63d0df5176c",
+      "googleId": null,
+      "avatarUrl": null,
+      "authProvider": "email",
       "role": "user",
       "createdAt": "2026-06-26T09:54:14.772Z",
       "id": 4
@@ -3132,5 +3148,18 @@
       "id": 3
     }
   ],
-  "otps": []
+  "otps": [
+    {
+      "email": "",
+      "phone": "8087586061",
+      "codeHash": "2ebd4e90e82ea8f3c63d611918eeb3e29b6039bd9aedf48a975effa2e190f13c",
+      "purpose": "phone_login",
+      "payload": null,
+      "expiresAt": "2026-06-28T08:04:26.962Z",
+      "attempts": 0,
+      "createdAt": "2026-06-28T07:54:26.962Z",
+      "id": 1
+    }
+  ],
+  "sessions": []
 }

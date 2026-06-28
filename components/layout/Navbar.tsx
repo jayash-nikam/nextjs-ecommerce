@@ -22,6 +22,9 @@ import { useAuthStore } from '@/store/useAuthStore'
 import { SearchBox } from '@/components/layout/SearchBox'
 import { BrandLogo } from '@/components/layout/BrandLogo'
 import { CartDrawer } from '@/components/cart/CartDrawer'
+import { useBodyScrollLock } from '@/lib/hooks/useBodyScrollLock'
+import { useEscapeKey } from '@/lib/hooks/useEscapeKey'
+import { formatPhoneDisplay } from '@/lib/phone'
 import {
   PRODUCT_CATEGORIES,
   CATEGORY_META,
@@ -43,8 +46,15 @@ export function Navbar() {
   const items = useCartStore((state) => state.items)
   const openCart = useCartStore((state) => state.openCart)
   const user = useAuthStore((state) => state.user)
+  const authStatus = useAuthStore((state) => state.status)
   const logout = useAuthStore((state) => state.logout)
+  const isAuthenticated = authStatus === 'authenticated' && !!user
   const totalCount = mounted ? getCartCount(items) : 0
+
+  const closeMobile = () => setMobileOpen(false)
+
+  useBodyScrollLock(mobileOpen)
+  useEscapeKey(mobileOpen, closeMobile)
 
   useEffect(() => setMounted(true), [])
 
@@ -66,14 +76,14 @@ export function Navbar() {
     return pathname.startsWith(base)
   }
 
-  function handleLogout() {
-    logout()
+  async function handleLogout() {
+    await logout()
     setAccountOpen(false)
     setMobileOpen(false)
     router.push('/')
   }
 
-  const accountMenuItems = user
+  const accountMenuItems = isAuthenticated
     ? [
         { name: 'Dashboard', href: '/account', icon: LayoutDashboard },
         { name: 'Orders', href: '/account/orders', icon: Package },
@@ -209,9 +219,9 @@ export function Navbar() {
               {accountOpen && (
                 <div className="absolute top-full right-0 pt-2 w-52 z-50">
                   <div className="header-dropdown rounded-xl py-1.5">
-                    {user && (
+                    {isAuthenticated && user && (
                       <p className="header-menu-user px-4 py-2 text-xs border-b truncate">
-                        {user.name || user.email}
+                        {user.name || user.email || (user.phone ? formatPhoneDisplay(user.phone) : 'Account')}
                       </p>
                     )}
                     {accountMenuItems.map((item) => (
@@ -225,7 +235,7 @@ export function Navbar() {
                         {item.name}
                       </Link>
                     ))}
-                    {user && (
+                    {isAuthenticated && user && (
                       <button
                         type="button"
                         onClick={handleLogout}
@@ -240,21 +250,25 @@ export function Navbar() {
               )}
             </div>
 
-            <button
-              onClick={openCart}
-              className="relative p-2.5 rounded-xl header-link transition-colors"
-              aria-label="Shopping cart"
-            >
-              <ShoppingCart size={22} className="header-icon" />
-              {totalCount > 0 && (
-                <span className="absolute -top-0.5 -right-0.5 min-w-[18px] h-[18px] px-1 flex items-center justify-center bg-gradient-to-r from-primary to-accent text-white text-[10px] font-bold rounded-full">
-                  {totalCount}
-                </span>
-              )}
-            </button>
+            <div className="relative">
+              <button
+                id="cart-trigger"
+                onClick={openCart}
+                className="relative p-2.5 rounded-xl header-link transition-colors"
+                aria-label="Shopping cart"
+              >
+                <ShoppingCart size={22} className="header-icon" />
+                {totalCount > 0 && (
+                  <span className="absolute -top-0.5 -right-0.5 min-w-[18px] h-[18px] px-1 flex items-center justify-center bg-gradient-to-r from-primary to-accent text-white text-[10px] font-bold rounded-full">
+                    {totalCount}
+                  </span>
+                )}
+              </button>
+            </div>
 
             <button
-              className="lg:hidden p-2.5 rounded-xl header-link transition-colors"
+              type="button"
+              className="lg:hidden p-2.5 rounded-xl header-link transition-colors touch-target"
               onClick={() => setMobileOpen(true)}
               aria-label="Open menu"
               aria-expanded={mobileOpen}
@@ -279,34 +293,35 @@ export function Navbar() {
         aria-label="Navigation menu"
         aria-hidden={!mobileOpen}
         className={`
-          fixed top-0 right-0 h-full w-80 max-w-[90vw] site-header z-50 lg:hidden
-          transition-transform duration-300 ease-out overflow-y-auto
+          fixed top-0 right-0 h-full w-[min(100vw,20rem)] site-header z-50 lg:hidden
+          transition-transform duration-300 ease-out overflow-y-auto mobile-nav-drawer
           ${mobileOpen ? 'translate-x-0' : 'translate-x-full'}
         `}
       >
-        <div className="flex justify-between items-center p-4 border-b border-white/10">
+        <div className="flex justify-between items-center p-4 border-b border-white/10 sticky top-0 bg-black z-10">
           <span className="font-semibold text-white">Menu</span>
           <button
-            onClick={() => setMobileOpen(false)}
-            className="p-2 rounded-lg header-link"
+            type="button"
+            onClick={closeMobile}
+            className="p-2.5 rounded-lg header-link touch-target"
             aria-label="Close menu"
           >
             <X size={20} className="header-icon" />
           </button>
         </div>
 
-        <div className="p-4 sm:hidden">
-          <SearchBox expandable align="right" variant="dark" onNavigate={() => setMobileOpen(false)} />
+        <div className="p-4 sm:hidden border-b border-white/10">
+          <SearchBox expandable align="right" variant="dark" onNavigate={closeMobile} />
         </div>
 
-        <nav className="px-3 space-y-1" aria-label="Main navigation">
+        <nav className="mobile-nav-section space-y-1" aria-label="Main navigation">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
-              onClick={() => setMobileOpen(false)}
+              onClick={closeMobile}
               className={`
-                block px-4 py-3 rounded-xl text-sm font-medium transition-colors
+                block px-4 py-3.5 rounded-xl text-sm font-medium transition-colors min-h-[2.75rem] flex items-center
                 ${
                   isActive(link.href)
                     ? 'header-link-active'
@@ -317,29 +332,36 @@ export function Navbar() {
               {link.name}
             </Link>
           ))}
+          <Link
+            href="/products"
+            onClick={closeMobile}
+            className="block px-4 py-3.5 rounded-xl text-sm font-medium header-link min-h-[2.75rem] flex items-center"
+          >
+            All Products
+          </Link>
         </nav>
 
-        <div className="px-3 pt-4">
-          <p className="text-xs font-semibold uppercase tracking-wider header-muted px-4 mb-2">
+        <div className="mobile-nav-section pt-4">
+          <p className="text-xs font-semibold uppercase tracking-wider header-muted px-4 mb-3">
             Account
           </p>
-          <div className="space-y-1">
+          <div className="space-y-1 px-3">
             {accountMenuItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                onClick={() => setMobileOpen(false)}
-                className="flex items-center gap-3 px-4 py-3 rounded-xl text-sm header-link"
+                onClick={closeMobile}
+                className="flex items-center gap-3 px-4 py-3.5 rounded-xl text-sm header-link min-h-[2.75rem]"
               >
                 <item.icon size={18} />
                 <span className="font-medium">{item.name}</span>
               </Link>
             ))}
-            {user && (
+            {isAuthenticated && (
               <button
                 type="button"
                 onClick={handleLogout}
-                className="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm text-red-400 hover:bg-red-500/10"
+                className="w-full flex items-center gap-3 px-4 py-3.5 rounded-xl text-sm text-red-400 hover:bg-red-500/10 min-h-[2.75rem]"
               >
                 <LogOut size={18} />
                 <span className="font-medium">Sign Out</span>
@@ -348,20 +370,20 @@ export function Navbar() {
           </div>
         </div>
 
-        <div className="px-3 pt-4 pb-6">
-          <p className="text-xs font-semibold uppercase tracking-wider header-muted px-4 mb-2">
+        <div className="mobile-nav-section pt-4 pb-2">
+          <p className="text-xs font-semibold uppercase tracking-wider header-muted px-4 mb-3">
             Categories
           </p>
-          <div className="space-y-1">
+          <div className="mobile-nav-categories">
             {PRODUCT_CATEGORIES.map((cat) => (
               <Link
                 key={cat}
                 href={`/products?category=${cat}`}
-                onClick={() => setMobileOpen(false)}
-                className="flex items-center gap-3 px-4 py-3 rounded-xl text-sm header-link"
+                onClick={closeMobile}
+                className="mobile-nav-category"
               >
-                <span>{CATEGORY_META[cat].icon}</span>
-                <span className="font-medium">{CATEGORY_META[cat].label}</span>
+                <span className="text-lg">{CATEGORY_META[cat].icon}</span>
+                <span>{CATEGORY_META[cat].label}</span>
               </Link>
             ))}
           </div>

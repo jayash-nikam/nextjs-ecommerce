@@ -2,10 +2,24 @@ import { NextRequest, NextResponse } from 'next/server'
 import {
   createUserFromHash,
   findUserByEmail,
-  createSessionToken,
   toPublicUser,
 } from '@/lib/auth/users'
+import { jsonWithSession } from '@/lib/auth/issueSession'
 import { deleteOtp, verifyOtp } from '@/lib/otp'
+import type { RegisterOtpPayload } from '@/types/otp'
+
+function isRegisterPayload(
+  payload: unknown,
+): payload is RegisterOtpPayload {
+  return (
+    typeof payload === 'object' &&
+    payload !== null &&
+    'name' in payload &&
+    'passwordHash' in payload &&
+    typeof (payload as RegisterOtpPayload).name === 'string' &&
+    typeof (payload as RegisterOtpPayload).passwordHash === 'string'
+  )
+}
 
 export async function POST(request: NextRequest) {
   try {
@@ -34,7 +48,7 @@ export async function POST(request: NextRequest) {
     }
 
     const payload = result.record.payload
-    if (!payload?.name || !payload?.passwordHash) {
+    if (!isRegisterPayload(payload)) {
       return NextResponse.json(
         { error: 'Registration data expired. Please start again.' },
         { status: 400 },
@@ -49,9 +63,8 @@ export async function POST(request: NextRequest) {
     await deleteOtp(result.record.id)
 
     const user = toPublicUser(record)
-    const token = createSessionToken(user.id)
 
-    return NextResponse.json({ user, token }, { status: 201 })
+    return jsonWithSession(user, { status: 201 })
   } catch {
     return NextResponse.json({ error: 'Registration failed' }, { status: 500 })
   }

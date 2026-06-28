@@ -1,28 +1,41 @@
-import { StaticPageLayout } from '@/components/layout/StaticPageLayout'
-import { BRAND_NAME } from '@/lib/brand'
 import type { Metadata } from 'next'
+import { StaticPageLayout } from '@/components/layout/StaticPageLayout'
+import { CmsSections } from '@/components/cms/CmsSections'
+import { CmsRelatedLinks } from '@/components/cms/CmsRelatedLinks'
+import {
+  CMS_LAST_UPDATED,
+  CMS_PAGES,
+  termsSections,
+} from '@/lib/cms/content'
+import { BRAND_NAME, SUPPORT_EMAIL } from '@/lib/brand'
+
+const meta = CMS_PAGES.find((p) => p.slug === 'terms')!
 
 export const metadata: Metadata = {
-  title: 'Terms of Service',
-  description: `${BRAND_NAME} terms of service.`,
+  title: meta.title,
+  description: meta.description,
 }
 
 export default function TermsPage() {
   return (
-    <StaticPageLayout title="Terms of Service">
+    <StaticPageLayout
+      title="Terms of Service"
+      description={`Rules and guidelines for using ${BRAND_NAME}.`}
+      lastUpdated={CMS_LAST_UPDATED}
+    >
       <p>
-        By using {BRAND_NAME}, you agree to these terms. Products listed are subject
-        to availability. Prices and descriptions are provided for informational
-        purposes and may change without notice.
+        Please read these terms carefully before using our store. By placing an
+        order or creating an account, you agree to be bound by them.
       </p>
+      <CmsSections sections={termsSections} />
       <p>
-        Returns are accepted within 7 days of delivery for unused items in
-        original packaging. Warranty coverage varies by product and manufacturer.
+        Questions about these terms? Contact{' '}
+        <a href={`mailto:${SUPPORT_EMAIL}`} className="text-primary hover:underline">
+          {SUPPORT_EMAIL}
+        </a>
+        .
       </p>
-      <p>
-        {BRAND_NAME} is provided as-is for demonstration purposes. Full terms will
-        apply when checkout and payment features launch.
-      </p>
+      <CmsRelatedLinks exclude={['terms']} />
     </StaticPageLayout>
   )
 }

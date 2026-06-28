@@ -1,36 +1,105 @@
 import { create } from 'zustand'
-import { persist, createJSONStorage } from 'zustand/middleware'
 import type { UserPublic } from '@/types/user'
+
+export type AuthStatus = 'loading' | 'authenticated' | 'unauthenticated'
 
 interface AuthStore {
   user: UserPublic | null
-  token: string | null
-  setAuth: (user: UserPublic, token: string) => void
-  logout: () => void
+  status: AuthStatus
+  setUser: (user: UserPublic | null) => void
+  hydrate: () => Promise<void>
+  logout: () => Promise<void>
 }
 
-export const useAuthStore = create<AuthStore>()(
-  persist(
-    (set) => ({
-      user: null,
-      token: null,
+let legacyToken: string | null = null
 
-      setAuth: (user, token) => set({ user, token }),
+function readLegacyToken(): string | null {
+  if (legacyToken !== null) return legacyToken
+  if (typeof window === 'undefined') return null
 
-      logout: () => set({ user: null, token: null }),
-    }),
-    {
-      name: 'ai-store-auth',
-      storage: createJSONStorage(() => localStorage),
-      partialize: (state) => ({ user: state.user, token: state.token }),
-    },
-  ),
-)
-
-export function authHeaders(token: string | null): HeadersInit {
-  if (!token) return { 'Content-Type': 'application/json' }
-  return {
-    'Content-Type': 'application/json',
-    Authorization: `Bearer ${token}`,
+  try {
+    const raw = localStorage.getItem('ai-store-auth')
+    if (!raw) return null
+    const parsed = JSON.parse(raw) as { state?: { token?: string } }
+    legacyToken = parsed.state?.token ?? null
+    return legacyToken
+  } catch {
+    return null
   }
+}
+
+function clearLegacyAuthStorage(): void {
+  legacyToken = null
+  if (typeof window !== 'undefined') {
+    localStorage.removeItem('ai-store-auth')
+  }
+}
+
+export const useAuthStore = create<AuthStore>()((set, get) => ({
+  user: null,
+  status: 'loading',
+
+  setUser: (user) =>
+    set({
+      user,
+      status: user ? 'authenticated' : 'unauthenticated',
+    }),
+
+  hydrate: async () => {
+    set({ status: 'loading' })
+
+    try {
+      const token = readLegacyToken()
+      const res = await fetch('/api/auth/session', {
+        credentials: 'include',
+        headers: token ? { Authorization: `Bearer ${token}` } : undefined,
+      })
+
+      if (res.ok) {
+        const data = await res.json()
+        clearLegacyAuthStorage()
+        set({ user: data.user, status: 'authenticated' })
+        return
+      }
+
+      clearLegacyAuthStorage()
+      set({ user: null, status: 'unauthenticated' })
+    } catch {
+      set({ user: null, status: 'unauthenticated' })
+    }
+  },
+
+  logout: async () => {
+    const token = readLegacyToken()
+    try {
+      await fetch('/api/auth/logout', {
+        method: 'POST',
+        credentials: 'include',
+        headers: token ? { Authorization: `Bearer ${token}` } : undefined,
+      })
+    } catch {
+      // Clear local state even if the network call fails.
+    }
+
+    clearLegacyAuthStorage()
+    set({ user: null, status: 'unauthenticated' })
+  },
+}))
+
+export function authHeaders(): HeadersInit {
+  return { 'Content-Type': 'application/json' }
+}
+
+export function authFetch(
+  input: RequestInfo | URL,
+  init?: RequestInit,
+): Promise<Response> {
+  return fetch(input, {
+    ...init,
+    credentials: 'include',
+    headers: {
+      ...authHeaders(),
+      ...init?.headers,
+    },
+  })
 }

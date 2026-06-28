@@ -7,9 +7,7 @@ import {
 import { validateProductInput, parseProductForm } from '@/lib/validation/product'
 
 export async function GET(request: NextRequest) {
-  const admin = await getAdminFromRequest(
-    request.headers.get('authorization'),
-  )
+  const admin = await getAdminFromRequest(request)
   if (!admin) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
@@ -23,9 +21,7 @@ export async function GET(request: NextRequest) {
 }
 
 export async function POST(request: NextRequest) {
-  const admin = await getAdminFromRequest(
-    request.headers.get('authorization'),
-  )
+  const admin = await getAdminFromRequest(request)
   if (!admin) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }

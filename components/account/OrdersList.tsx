@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Loader2, Package, ChevronRight } from 'lucide-react'
-import { useAuthStore, authHeaders } from '@/store/useAuthStore'
+import { useAuthStore, authFetch } from '@/store/useAuthStore'
 import type { Order, OrderStatus } from '@/types/order'
 
 const statusStyles: Record<OrderStatus, string> = {
@@ -16,16 +16,21 @@ const statusStyles: Record<OrderStatus, string> = {
 }
 
 export function OrdersList() {
-  const token = useAuthStore((s) => s.token)
+  const user = useAuthStore((s) => s.user)
   const [orders, setOrders] = useState<Order[]>([])
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('/api/orders', { headers: authHeaders(token) })
+    if (!user) {
+      setLoading(false)
+      return
+    }
+
+    authFetch('/api/orders')
       .then((res) => res.json())
       .then(setOrders)
       .finally(() => setLoading(false))
-  }, [token])
+  }, [user])
 
   if (loading) {
     return (

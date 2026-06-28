@@ -116,9 +116,12 @@ export async function adminGetUsersWithMeta(): Promise<AdminUserRow[]> {
 
     return {
       id: user.id,
-      email: user.email,
+      email: user.email ?? null,
+      phone: user.phone ?? null,
       name: user.name,
       role: user.role || 'user',
+      authProvider: user.authProvider || 'email',
+      avatarUrl: user.avatarUrl ?? null,
       createdAt: user.createdAt,
       orderCount: userOrders.length,
       totalSpent,
